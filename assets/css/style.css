@@ -14,6 +14,10 @@ body {
   font-family: 'Roboto Mono', monospace !important;
 }
 
+.color-custom {
+  color: #c542c5 !important;
+}
+
 /* hero section */
 .intro-titles {
   padding-left: 18vh !important;
