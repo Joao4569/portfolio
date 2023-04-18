@@ -31,7 +31,7 @@ body {
   font-size: 6vh;
 }
 
-.intro {
+.main-intro {
   color: white !important;
   font-family: 'Roboto Mono', monospace;
   font-size: 1.5vh;
@@ -41,4 +41,27 @@ body {
 .body-title {
   font-family: 'Roboto', sans-serif;
   font-size: 3vh;
+}
+
+.grid-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2vh;
+  color: #c542c5 !important;
+}
+
+.grid-secondary-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2vh;
+  color: white !important;
+}
+
+.grid-info {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5vh;
+  color: white !important;
+}
+
+.icons {
+  font-size: 3vh;
+  color: #c542c5 !important;
 }
