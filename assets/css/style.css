@@ -8,7 +8,17 @@
   border: none;
 }
 
+/* page standards */
+body {
+  color: white !important;
+  font-family: 'Roboto Mono', monospace !important;
+}
+
 /* hero section */
+.intro-titles {
+  padding-left: 18vh !important;
+}
+
 .title-name {
   color: white !important;
   font-family: 'Roboto', sans-serif;
@@ -25,4 +35,10 @@
   color: white !important;
   font-family: 'Roboto Mono', monospace;
   font-size: 1.5vh;
+}
+
+/* my projects section */
+.body-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vh;
 }
