@@ -18,54 +18,52 @@ body {
   color: #c542c5 !important;
 }
 
+.white-font {
+  color: white !important;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-roboto-mono {
+  font-family: 'Roboto Mono', monospace !important;
+}
+
 /* hero section */
 .intro-titles {
   padding-left: 18vh !important;
 }
 
 .title-name {
-  color: white !important;
-  font-family: 'Roboto', sans-serif;
   font-size: 6vh;
 }
 
 .title-profession {
-  color: #c542c5 !important;
-  font-family: 'Roboto', sans-serif;
   font-size: 6vh;
 }
 
 .main-intro {
-  color: white !important;
-  font-family: 'Roboto Mono', monospace;
   font-size: 1.5vh;
 }
 
 /* my projects section */
 .body-title {
-  font-family: 'Roboto', sans-serif;
   font-size: 3vh;
 }
 
 .grid-title {
-  font-family: 'Roboto', sans-serif;
   font-size: 2vh;
-  color: #c542c5 !important;
 }
 
 .grid-secondary-title {
-  font-family: 'Roboto', sans-serif;
   font-size: 2vh;
-  color: white !important;
 }
 
 .grid-info {
-  font-family: 'Roboto Mono', monospace;
   font-size: 1.5vh;
-  color: white !important;
 }
 
 .icons {
   font-size: 3vh;
-  color: #c542c5 !important;
 }
