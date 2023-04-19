@@ -61,6 +61,11 @@ body {
   font-size: 3vh;
 }
 
+.projects-margin {
+  margin-left: 10vh !important;
+  margin-right: 10vh !important;
+}
+
 /* grid section */
 .grid-title {
   font-size: 2vh;
