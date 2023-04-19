@@ -12,6 +12,7 @@
 body {
   color: white !important;
   font-family: 'Roboto Mono', monospace !important;
+  background-color: #585e64 !important;
 }
 
 .color-custom {
@@ -28,6 +29,11 @@ body {
 
 .font-roboto-mono {
   font-family: 'Roboto Mono', monospace !important;
+}
+
+/* navbar */
+nav {
+  background-color: #585e64 !important;
 }
 
 /* hero section */
@@ -72,3 +78,34 @@ body {
   font-size: 1vh;
 }
 
+/* media queries */
+
+/* for screen width less than 1400px */
+@media screen and (max-width: 1400px) {
+
+  /* hero section */
+  .intro-titles {
+    padding-left: 14vh !important;
+  }
+
+}
+
+/* for screen width less than 1200px */
+@media screen and (max-width: 1200px) {
+
+  /* hero section */
+  .intro-titles {
+    padding-left: 10vh !important;
+  }
+
+}
+
+/* for screen width less than 875px */
+@media screen and (max-width: 875px) {
+
+  /* hero section */
+  .intro-titles {
+    padding-left: 5vh !important;
+  }
+
+}
