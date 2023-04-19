@@ -57,7 +57,7 @@ body {
 }
 
 .grid-secondary-title {
-  font-size: 2vh;
+  font-size: 1.75vh;
 }
 
 .grid-info {
@@ -67,3 +67,8 @@ body {
 .icons {
   font-size: 3vh;
 }
+
+.icon-font-size {
+  font-size: 1vh;
+}
+
