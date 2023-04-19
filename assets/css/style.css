@@ -62,8 +62,8 @@ body {
 }
 
 .projects-margin {
-  margin-left: 10vh !important;
-  margin-right: 10vh !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* grid section */
