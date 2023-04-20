@@ -1,7 +1,9 @@
 /* google fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@900&display=swap');
 
 /* best practice */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,35 +11,36 @@
 }
 
 /* page standards */
+
 body {
-  /*color: white !important;*/
   color: #FFF5F9 !important;
   font-family: 'Roboto Mono', monospace !important;
 }
 
 /* colors and fonts */
+
 .blk-background {
-  /*background-color: black !important;*/
   background-color: black !important;
 }
 
 .grey-background {
-  /*background-color: #585e64 !important;*/
-  background-color: #28161C !important;
+  background-color: #2c161d !important;
 }
 
 .color-custom {
-  /*color: #c542c5 !important;*/
   color: #ED5E93 !important;
 }
 
 .white-font {
-  /*color: white !important;*/
   color: #FFF5F9 !important;
 }
 
 .icons:hover, .navbar-text:hover {
   color: #ED5E93 !important;
+}
+
+.card-link {
+  color: black;
 }
 
 .font-roboto {
@@ -49,6 +52,7 @@ body {
 }
 
 /* hero section */
+
 .hero-text {
   padding-left: 18vh !important;
 }
@@ -62,6 +66,7 @@ body {
 }
 
 /* my projects section */
+
 .body-title {
   font-size: 3vh;
 }
@@ -72,27 +77,29 @@ body {
 }
 
 /* grid section */
-.grid-title {
+
+.card-header {
   font-size: 1.7vh;
 }
 
-.grid-secondary-title {
+.card-title {
   font-size: 1.4vh;
 }
 
-.grid-info {
+.card-text {
   font-size: 1.2vh;
-}
-
-.icons {
-  font-size: 2vh;
 }
 
 .icon-font-size {
   font-size: 1vh;
 }
 
+.icons {
+  font-size: 2vh;
+}
+
 /* footer */
+
 .copyright {
   font-size: 2vh;
 }
@@ -100,9 +107,11 @@ body {
 /* media queries */
 
 /* for screen width less than 1400px */
+
 @media screen and (max-width: 1400px) {
 
   /* hero section */
+
   .hero-text {
     padding-left: 14vh !important;
   }
@@ -113,6 +122,7 @@ body {
 @media screen and (max-width: 1200px) {
 
   /* hero section */
+
   .hero-text {
     padding-left: 10vh !important;
   }
@@ -123,6 +133,7 @@ body {
 @media screen and (max-width: 875px) {
 
   /* hero section */
+
   .hero-text {
     padding-left: 5vh !important;
   }
@@ -133,11 +144,13 @@ body {
 @media screen and (max-width: 815px) {
 
   /* navbar */
+
   .navbar-text {
     font-size: 1.5vh !important;
   }
 
   /* hero section */
+  
   .hero-title {
     font-size: 5vh;
   }
