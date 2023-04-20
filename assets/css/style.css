@@ -10,24 +10,34 @@
 
 /* page standards */
 body {
-  color: white !important;
+  /*color: white !important;*/
+  color: #FFF5F9 !important;
   font-family: 'Roboto Mono', monospace !important;
 }
 
+/* colors and fonts */
 .blk-background {
+  /*background-color: black !important;*/
   background-color: black !important;
 }
 
 .grey-background {
-  background-color: #585e64 !important;
+  /*background-color: #585e64 !important;*/
+  background-color: #28161C !important;
 }
 
 .color-custom {
-  color: #c542c5 !important;
+  /*color: #c542c5 !important;*/
+  color: #ED5E93 !important;
 }
 
 .white-font {
-  color: white !important;
+  /*color: white !important;*/
+  color: #FFF5F9 !important;
+}
+
+.icons:hover, .navbar-text:hover {
+  color: #ED5E93 !important;
 }
 
 .font-roboto {
@@ -36,11 +46,6 @@ body {
 
 .font-roboto-mono {
   font-family: 'Roboto Mono', monospace !important;
-}
-
-/* navbar */
-.navbar-text:hover {
-  color: black !important;
 }
 
 /* hero section */
@@ -68,27 +73,23 @@ body {
 
 /* grid section */
 .grid-title {
-  font-size: 2vh;
+  font-size: 1.7vh;
 }
 
 .grid-secondary-title {
-  font-size: 1.75vh;
+  font-size: 1.4vh;
 }
 
 .grid-info {
-  font-size: 1.5vh;
+  font-size: 1.2vh;
 }
 
 .icons {
-  font-size: 3vh;
+  font-size: 2vh;
 }
 
 .icon-font-size {
   font-size: 1vh;
-}
-
-.icons:hover {
-  color: #c542c5 !important;
 }
 
 /* footer */
