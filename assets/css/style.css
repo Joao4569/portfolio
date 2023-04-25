@@ -158,23 +158,65 @@ body {
 
 }
 
-/* for screen width less than 815px */
-@media screen and (max-width: 815px) {
+/* for screen width less than 768px */
+@media screen and (max-width: 768px) {
 
   /* navbar */
 
-  /*.navbar-text {
-    font-size: 1.5vh !important;
-  }*/
+  .aux-text {
+    font-size: 1.6vh;
+  }
 
   /* hero section */
+
+  .hero-title {
+    font-size: 6vh;
+  }
   
-  /*.hero-title {
-    font-size: 5vh;
-  }*/
-  
-  /*.subtitle-text {
-    font-size: 1.25vh;
-  }*/
+  .subtitle-text {
+    font-size: 2vh;
+  }
+
+  /* my projects section */
+
+  .diploma {
+    font-size: 2.5vh;
+  }
+
+  /* grid section */
+
+.card-header {
+  font-size: 2.5vh;
+}
+
+.card-title {
+  font-size: 2vh;
+}
+
+.info-text {
+  font-size: 1.75vh;
+}
+
+.icon-font-size {
+  font-size: 1.3vh;
+}
+
+.icons {
+  font-size: 2.5vh;
+}
+
+/* footer */
+
+.fine-text {
+  font-size: 2.5vh;
+}
+
+.copyright-text {
+  font-size: 1.5vh;
+}
+
+.social-links {
+  font-size: 3vh;
+}
 
 }
