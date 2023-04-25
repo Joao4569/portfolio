@@ -23,7 +23,7 @@ body {
   background-color: black !important;
 }
 
-.grey-background {
+.custom-background {
   background-color: #8f4e63 !important;
 }
 
@@ -51,6 +51,12 @@ body {
   font-family: 'Roboto Mono', monospace !important;
 }
 
+/* navbar */
+
+.aux-text {
+  font-size: 1.5vh;
+}
+
 /* hero section */
 
 .hero-text {
@@ -58,17 +64,17 @@ body {
 }
 
 .hero-title {
-  font-size: 6vh;
+  font-size: 7vh;
 }
 
-.hero-intro {
-  font-size: 1.5vh;
+.subtitle-text {
+  font-size: 1.75vh;
 }
 
 /* my projects section */
 
 .body-title {
-  font-size: 3vh;
+  font-size: 4vh;
 }
 
 .projects-margin {
@@ -79,19 +85,19 @@ body {
 /* grid section */
 
 .card-header {
-  font-size: 1.7vh;
+  font-size: 2vh;
 }
 
 .card-title {
-  font-size: 1.4vh;
+  font-size: 1.6vh;
 }
 
-.card-text {
-  font-size: 1.2vh;
+.info-text {
+  font-size: 1.25vh;
 }
 
 .icon-font-size {
-  font-size: 1vh;
+  font-size: 1.1vh;
 }
 
 .icons {
@@ -102,6 +108,10 @@ body {
 
 .copyright {
   font-size: 2vh;
+}
+
+.copyright-text {
+  font-size: 1.25vh;
 }
 
 .social-links {
@@ -149,18 +159,18 @@ body {
 
   /* navbar */
 
-  .navbar-text {
+  /*.navbar-text {
     font-size: 1.5vh !important;
-  }
+  }*/
 
   /* hero section */
   
-  .hero-title {
+  /*.hero-title {
     font-size: 5vh;
-  }
+  }*/
   
-  .hero-intro {
+  /*.subtitle-text {
     font-size: 1.25vh;
-  }
+  }*/
 
 }
