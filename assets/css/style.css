@@ -82,6 +82,10 @@ body {
   margin-right: auto;
 }
 
+.diploma {
+  font-size: 2vh;
+}
+
 /* grid section */
 
 .card-header {
@@ -106,7 +110,7 @@ body {
 
 /* footer */
 
-.copyright {
+.fine-text {
   font-size: 2vh;
 }
 
