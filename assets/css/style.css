@@ -63,6 +63,10 @@ body {
   letter-spacing: 1px;
 }
 
+.navbar-toggler {
+  font-size: small !important;
+}
+
 /* hero section */
 
 .hero-text {
