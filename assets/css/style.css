@@ -1,6 +1,10 @@
 /* google fonts */
 
+/* roboto and roboto mono font*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@900&display=swap');
+
+/* kanit font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 
 /* best practice */
 
@@ -14,13 +18,13 @@
 
 body {
   color: #FFF5F9 !important;
-  font-family: 'Roboto Mono', monospace !important;
+  font-family: 'Kanit', sans-serif !important;
 }
 
 /* colors and fonts */
 
 .blk-background {
-  background-color: black !important;
+  background-color: #141212 !important;
 }
 
 .custom-background {
@@ -48,14 +52,15 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.font-roboto-mono {
-  font-family: 'Roboto Mono', monospace !important;
+.font-kanit {
+  font-family: 'Kanit', sans-serif !important;
 }
 
 /* navbar */
 
 .aux-text {
   font-size: 1.5vh;
+  letter-spacing: 1px;
 }
 
 /* hero section */
@@ -69,7 +74,7 @@ body {
 }
 
 .subtitle-text {
-  font-size: 1.75vh;
+  font-size: 2vh;
 }
 
 /* my projects section */
@@ -94,11 +99,11 @@ body {
 }
 
 .card-title {
-  font-size: 1.6vh;
+  font-size: 1.75vh;
 }
 
 .info-text {
-  font-size: 1.25vh;
+  font-size: 1.5vh;
 }
 
 .icon-font-size {
@@ -116,7 +121,7 @@ body {
 }
 
 .copyright-text {
-  font-size: 1.25vh;
+  font-size: 1.5vh;
 }
 
 .social-links {
@@ -175,7 +180,7 @@ body {
   }
   
   .subtitle-text {
-    font-size: 2vh;
+    font-size: 2.2vh;
   }
 
   /* my projects section */
@@ -191,11 +196,11 @@ body {
 }
 
 .card-title {
-  font-size: 2vh;
+  font-size: 2.2vh;
 }
 
 .info-text {
-  font-size: 1.75vh;
+  font-size: 2vh;
 }
 
 .icon-font-size {
@@ -213,7 +218,7 @@ body {
 }
 
 .copyright-text {
-  font-size: 1.5vh;
+  font-size: 1.75vh;
 }
 
 .social-links {
