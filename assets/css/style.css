@@ -230,3 +230,12 @@ body {
 }
 
 }
+
+/* Tooltips */
+.tooltip-inner {
+  background-color: yellow !important;
+  color: black !important;
+  font-size: 1.5vh !important;
+  font-weight: bold !important;
+  padding: 0.8vh !important;
+}
