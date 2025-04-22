@@ -24,5 +24,20 @@
    "workbench.colorTheme": "Visual Studio Dark",
    "terminal.integrated.gpuAcceleration": "canvas",
    "editor.defaultFormatter": "HookyQR.beautify",
-   "editor.tabSize": 2
+   "editor.tabSize": 2,
+   "cSpell.words": [
+      "becentered",
+      "bootcamp",
+      "dropdownmenu",
+      "Fáilte",
+      "lerncare",
+      "LGBTQ",
+      "lovin",
+      "Namco",
+      "Odenkirk",
+      "Padawan",
+      "SAVO",
+      "sith",
+      "starathon"
+   ]
 }
