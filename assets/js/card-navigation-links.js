@@ -1,16 +1,19 @@
 document.addEventListener('click', function (event) {
-  // Check if the clicked element is a link with a specific id
-  if (event.target.id === 'ocean-basket-link' || event.target.id === 'farm-fresh-link') {
+  // Check if the clicked element has a data-project-link attribute
+  if (event.target.dataset.projectLink) {
     event.preventDefault(); // Prevent default behavior
 
-    // Map link ids to their corresponding accordion and card ids
+    // Get the project key from the data attribute
+    const projectKey = event.target.dataset.projectLink;
+
+    // Map project keys to their corresponding accordion and card ids
     const projectMap = {
-      'ocean-basket-link': { accordionId: 'collapseTwo', cardId: 'ocean-basket' },
-      'farm-fresh-link': { accordionId: 'collapseTwo', cardId: 'farm-fresh' },
+      'ocean-basket': { accordionId: 'collapseTwo', cardId: 'ocean-basket' },
+      'farm-fresh': { accordionId: 'collapseTwo', cardId: 'farm-fresh' },
     };
 
     // Get the corresponding accordion and card ids
-    const { accordionId, cardId } = projectMap[event.target.id];
+    const { accordionId, cardId } = projectMap[projectKey];
 
     // Open the corresponding accordion section
     const accordionSection = document.getElementById(accordionId);
