@@ -101,6 +101,25 @@ h1, h2, h3, h4, h5, h6, .dropdown-menu {
   font-weight: 700; /* Bold title */
 }
 
+/* Info section */
+
+#updates-and-plans {
+  padding: 1.2rem !important;
+}
+
+.border-info-section {
+  border: 4px solid var(--interaction) !important; /* Charcoal border color */
+  border-radius: 15px !important; /* Rounded corners for the card */
+  background-color: rgba(218, 220, 221, 0.3); /* Light grey background */
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.link-to-project-card {
+  text-decoration: none !important; /* Remove underline from links */
+  color: var(--interaction);
+  font-weight: 700 !important;
+}
+
 /* Styling for the project cards */
 
 .accordion-item {
@@ -124,6 +143,13 @@ h1, h2, h3, h4, h5, h6, .dropdown-menu {
 
 .body-title {
   font-size: 4vh;
+}
+
+.body-subtitle {
+  font-size: 1.7vh;
+  color: var(--secondary-accent);
+  font-weight: 600;
+  font-family: 'Inter', sans-serif !important;
 }
 
 .projects-margin {
@@ -196,11 +222,6 @@ h1, h2, h3, h4, h5, h6, .dropdown-menu {
   background-color: var(--white) !important; /* Light grey background */
 }
 
-.tech-stack:hover {
-  background-color: var(--interaction) !important; /* Coral color on hover */
-  color: var(--white) !important; /* White text on hover */
-}
-
 .update-text {
   color: var(--secondary-accent);
   font-family: 'Inter', sans-serif !important;
@@ -209,6 +230,86 @@ h1, h2, h3, h4, h5, h6, .dropdown-menu {
 .card-header {
   border: none !important; /* Remove default Bootstrap border */
   background-color: var(--light-neutral) !important; /* Light grey background */
+}
+
+.html-logo-color {
+  color: #E34C26;
+}
+
+.css-logo-color {
+  color: #264de4;
+}
+
+.bootstrap-logo-color {
+  color: #563d7c;
+}
+
+.db-logo-color {
+  color: #4B8BBE;
+}
+
+.postgres-logo {
+  height: 1em; /* Match the font size of the text */
+  vertical-align: middle; /* Align the logo with the text */
+  margin-left: 0.25em; /* Add spacing between the text and the logo */
+}
+
+.docker-logo-color {
+  color: #2496ED;
+}
+
+.django-logo {
+  height: 1em; /* Match the font size of the text */
+  vertical-align: middle; /* Align the logo with the text */
+  margin-left: 0.5em; /* Add spacing between the text and the logo */
+}
+
+.stripe-logo {
+  height: 1em; /* Match the font size of the text */
+  vertical-align: middle; /* Align the logo with the text */
+  margin-left: 0.25em; /* Add spacing between the text and the logo */
+  margin-bottom: 0.1em; /* Adjust vertical alignment */
+}
+
+.aws-s3-logo {
+  height: 1em; /* Match the font size of the text */
+  vertical-align: middle; /* Align the logo with the text */
+  margin-left: 0.25em; /* Add spacing between the text and the logo */
+  margin-bottom: 0.3em; /* Adjust vertical alignment */
+}
+
+.sqla-logo {
+  height: 1.2em; /* Match the font size of the text */
+  vertical-align: middle; /* Align the logo with the text */
+  margin-left: 0.3em; /* Add spacing between the text and the logo */
+}
+
+.twcss-logo {
+  height: 1em; /* Match the font size of the text */
+  width: 0.9em;
+  vertical-align: middle; /* Align the logo with the text */
+  margin-left: 0.3em; /* Add spacing between the text and the logo */
+  margin-bottom: 0.3em; /* Adjust vertical alignment */
+}
+
+.leaflet-logo {
+  height: 1em; /* Match the font size of the text */
+  vertical-align: middle; /* Align the logo with the text */
+  margin-left: 0.2em; /* Add spacing between the text and the logo */
+  margin-bottom: 0.3em; /* Adjust vertical alignment */
+}
+
+.failte-ireland-logo {
+  height: 1em; /* Match the font size of the text */
+  vertical-align: middle; /* Align the logo with the text */
+  margin-left: 0.3em; /* Add spacing between the text and the logo */
+  margin-bottom: 0.3em; /* Adjust vertical alignment */
+}
+
+.heroku-logo {
+  height: 1em; /* Match the font size of the text */
+  vertical-align: middle; /* Align the logo with the text */
+  margin-left: 0.3em; /* Add spacing between the text and the logo */
 }
 
 /* footer */
@@ -284,47 +385,50 @@ h1, h2, h3, h4, h5, h6, .dropdown-menu {
     font-size: 2.2vh;
   }
 
-  /* my projects section */
+  /* grid section */
 
-  .diploma {
+  .accordion-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .card-img-top {
+    height: 200px !important;
+  }
+
+  .card-header {
     font-size: 2.5vh;
   }
 
-  /* grid section */
+  .card-title {
+    font-size: 2.2vh;
+  }
 
-.card-header {
-  font-size: 2.5vh;
-}
+  .info-text {
+    font-size: 2vh;
+  }
 
-.card-title {
-  font-size: 2.2vh;
-}
+  .icon-font-size {
+    font-size: 1.3vh;
+  }
 
-.info-text {
-  font-size: 2vh;
-}
+  .icons {
+    font-size: 2.5vh;
+  }
 
-.icon-font-size {
-  font-size: 1.3vh;
-}
+  /* footer */
 
-.icons {
-  font-size: 2.5vh;
-}
+  .fine-text {
+    font-size: 2.5vh;
+  }
 
-/* footer */
+  .copyright-text {
+    font-size: 1.75vh;
+  }
 
-.fine-text {
-  font-size: 2.5vh;
-}
-
-.copyright-text {
-  font-size: 1.75vh;
-}
-
-.social-links {
-  font-size: 3vh;
-}
+  .social-links {
+    font-size: 3vh;
+  }
 
 }
 

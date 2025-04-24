@@ -78,39 +78,46 @@
     </div>
   </div>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <h2>Latest Releases</h2>
-        <p>
+  <!-- information -->
+  <div class="container-fluid" id="updates-and-plans">
+
+    <!-- latest releases -->
+    <div class="row mt-5 border-info-section">
+      <div class="col my-5">
+        <h2 class="body-title">Latest Releases</h2>
+        <p class="mt-3 px-4">
           I'm excited to share the latest updates to my portfolio and projects, reflecting my commitment to continuous improvement and modern development practices.
         </p>
-        <p>
-          **Portfolio Site Refresh:** This portfolio site itself has undergone a significant update! I've restructured the content for enhanced readability and implemented a fresh, contemporary color palette and design to provide a more vibrant and engaging user experience.
+        <p class="mt-3 px-4">
+          <span class="body-subtitle">Portfolio Site Refresh:</span><br>
+          This portfolio site itself has undergone a significant update! I've restructured the content for enhanced readability and implemented a fresh, contemporary color palette and design to provide a more vibrant and engaging user experience.
         </p>
-        <p>
-          **Ocean Basket v2.0:** Addressing the end-of-life status of ElephantSQL and the aging Django 3.2/Python 3.9 dependencies, I've released a completely refactored version 2.0 of the <a data-project-link="ocean-basket" class="" href="">Ocean Basket</a> application. This major upgrade includes migrating to the latest Django version (5.2), containerizing the application using Docker for improved deployment and scalability, and implementing a comprehensive suite of unit tests to support a robust Test-Driven Development (TDD) workflow. This project demonstrates my ability to modernize legacy applications, adopt containerization, and build reliable software through rigorous testing.
-        </p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <h2>Current Work</h2>
-        <p>
-          I am currently undertaking a significant upgrade and refactoring of the <a data-project-link="farm-fresh" class="" href="">Farm Fresh</a> application. Similar to the recent work on Ocean Basket, this involves updating the core dependencies to the latest versions of Django and Python. I am also implementing Docker containerization to streamline deployment and development workflows, and integrating a comprehensive suite of unit tests to ensure code quality and support a Test-Driven Development approach. This project further demonstrates my commitment to maintaining robust, modern, and well-tested applications.
+        <p class="mt-3 px-4">
+          <span class="body-subtitle">Ocean Basket v2.0:</span><br>
+          Addressing the end-of-life status of ElephantSQL and the aging Django 3.2/Python 3.9 dependencies, I've released a completely refactored version 2.0 of the <a data-project-link="ocean-basket" class="link-to-project-card" href="">Ocean Basket</a> application. This major upgrade includes migrating to the latest Django version (5.2), containerizing the application using Docker for improved deployment and scalability, and implementing a comprehensive suite of unit tests to support a robust Test-Driven Development (TDD) workflow. This project demonstrates my ability to modernize legacy applications, adopt containerization, and build reliable software through rigorous testing.
         </p>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col">
-        <h2>Future Plans</h2>
-        <p>
-          Looking ahead, a key focus of my development plans is to enhance the user interface and experience of my core projects. My next major undertaking involves building modern, dynamic frontends for both the <a data-project-link="ocean-basket" class="" href="">Ocean Basket</a> and <a data-project-link="farm-fresh" class="" href="">Farm Fresh</a> applications using the **React JS library**.
+    <!-- current work -->
+    <div class="row mt-5 border-info-section">
+      <div class="col mt-5 mb-5">
+        <h2 class="body-title">Current Work</h2>
+        <p class="mt-3 px-4">
+          I am currently undertaking a significant upgrade and refactoring of the <a data-project-link="farm-fresh" class="link-to-project-card" href="">Farm Fresh</a> application. Similar to the recent work on Ocean Basket, this involves updating the core dependencies to the latest versions of Django and Python. I am also implementing Docker containerization to streamline deployment and development workflows, and integrating a comprehensive suite of unit tests to ensure code quality and support a Test-Driven Development approach. This project further demonstrates my commitment to maintaining robust, modern, and well-tested applications.
         </p>
-        <p>
-          To facilitate seamless communication between these new React frontends and the existing Django/PostgreSQL backends, I will be developing robust **APIs using the Django REST Framework**. This will involve designing and implementing endpoints that allow the frontend applications to interact efficiently with the backend data and logic, further solidifying my skills in building full-stack applications with a decoupled architecture.
+      </div>
+    </div>
+
+    <!-- future plans -->
+    <div class="row mt-5 border-info-section">
+      <div class="col mt-5 mb-5">
+        <h2 class="body-title">Future Plans</h2>
+        <p class="mt-3 px-4">
+          Looking ahead, a key focus of my development plans is to enhance the user interface and experience of my core projects. My next major undertaking involves building modern, dynamic frontends for both the <a data-project-link="ocean-basket" class="link-to-project-card" href="">Ocean Basket</a> and <a data-project-link="farm-fresh" class="link-to-project-card" href="">Farm Fresh</a> applications using the React JS library.
+        </p>
+        <p class="mt-3 px-4">
+          To facilitate seamless communication between these new React frontends and the existing Django/PostgreSQL backends, I will be developing robust APIs using the Django REST Framework. This will involve designing and implementing endpoints that allow the frontend applications to interact efficiently with the backend data and logic, further solidifying my skills in building full-stack applications with a decoupled architecture.
         </p>
       </div>
     </div>
@@ -153,7 +160,7 @@
             <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
 
               <!-- love running card -->
-              <div class="col">
+              <div class="col" id="love-running">
                 <div class="card project-card">
 
                   <!-- card image -->
@@ -179,18 +186,20 @@
 
                     <!-- card links -->
 
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="dropdown-item tech-stack">HTML</li>
-                      <li class="dropdown-item tech-stack">CSS</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
+                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
-                    <a href="https://joao4569.github.io/love_running/" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://joao4569.github.io/love_running/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/love_running" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/love_running" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -225,19 +234,21 @@
 
                     <!-- card links -->
 
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
+                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
-                    <a href="https://joao4569.github.io/love-maths/" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://joao4569.github.io/love-maths/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/love-maths" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/love-maths" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -272,20 +283,22 @@
 
                     <!-- card links -->
 
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
-                      <li class="ms-2">Bootstrap</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
+                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
-                    <a href="https://joao4569.github.io/bootstrap-resume/" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://joao4569.github.io/bootstrap-resume/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/bootstrap-resume" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/bootstrap-resume" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -319,26 +332,28 @@
 
                     <!-- card links -->
 
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
-                      <li class="ms-2">Python</li>
-                      <li class="ms-2">Bootstrap</li>
-                      <li class="ms-2">Materialize</li>
-                      <li class="ms-2">Flask</li>
-                      <li class="ms-2">SQLalchemy</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="ms-2">Python<img src="assets/images/python-logo-only.svg" alt="Python logo" class="django-logo"></li>
+                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
+                      <li class="ms-2">Materialize<img src="assets/images/materializecss-svgrepo-com.svg" alt="Materialize logo" class="django-logo"></li>
+                      <li class="ms-2">Flask<img src="assets/images/Flask.svg" alt="Flask logo" class="django-logo"></li>
+                      <li class="ms-2">SQLAlchemy<img src="assets/images/SQLAlchemy.svg" alt="SQLAlchemy logo" class="sqla-logo"></li>
+                      <li class="mx-2">Heroku<img src="assets/images/heroku-icon-svgrepo-com.svg" alt="Heroku logo" class="heroku-logo"></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
                     <a href="#task-manager" data-bs-toggle="tooltip"
-                      data-bs-title="Site under construction: Moving Database to a new host!" class="btn btn-primary" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Site under construction: Moving Database to a new host!" class="btn btn-primary mt-1" data-bs-custom-class="custom-tooltip"
                     ><!-- https://flask-sqlalchemy-task-managerj.herokuapp.com/ -  target="_blank" rel="noopener" -->
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/flask-sqlalchemy-task-manager" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/flask-sqlalchemy-task-manager" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -385,7 +400,7 @@
             <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
 
               <!-- becentered card -->
-              <div class="col">
+              <div class="col" id="becentered">
                 <div class="card project-card">
 
                   <!-- card image -->
@@ -409,19 +424,21 @@
                   <div class="card-footer">
 
                     <!-- card links -->
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
+                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
 
-                    <a href="https://joao4569.github.io/be-centered/" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://joao4569.github.io/be-centered/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/be-centered" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/be-centered" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -454,20 +471,22 @@
                   <div class="card-footer">
 
                     <!-- card links -->
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
+                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
 
-                    <a href="https://joao4569.github.io/random-trivia/" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://joao4569.github.io/random-trivia/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/random-trivia" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/random-trivia" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -502,18 +521,20 @@
                   <div class="card-footer">
 
                     <!-- card links -->
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="mx-2">Python with a custom terminal window</li>
+                      <li class="mx-2">Python<img src="assets/images/python-logo-only.svg" alt="Python logo" class="django-logo"> with a custom terminal window</li>
+                      <li class="mx-2">Heroku<img src="assets/images/heroku-icon-svgrepo-com.svg" alt="Heroku logo" class="heroku-logo"></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
 
-                    <a href="https://survey-data-capture-extract.herokuapp.com/" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://survey-data-capture-extract.herokuapp.com/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/survey-data-capture-and-analyse" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/survey-data-capture-and-analyse" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -550,22 +571,24 @@
                   <div class="card-footer">
 
                     <!-- card links -->
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
-                      <li class="ms-2">Bootstrap</li>
-                      <li class="ms-2">EmailJS</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
+                      <li class="ms-2">EmailJS<img src="assets/images/email-js.svg" alt="EmailJS logo" class="django-logo"></li>
+                      <li class="ms-2">Netlify<img src="assets/images/netlify-svgrepo-com.svg" alt="Netlify logo" class="heroku-logo"></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
 
-                    <a href="https://joao4569.github.io/random-trivia/" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://joao-rodrigues-pc-recipe-website.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/random-trivia" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/pc-recipe-website" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -593,7 +616,7 @@
                       E-commerce application for a restaurant bookings system showcasing the use of a Full 
                       Stack Toolkit and CRUD functionality. This was my fourth project for assessment at Code Institute.<br/><br>
 
-                      <span class="fw-bolder update-text">New Release (v2.0):</span><br><br>Migrated to the latest version of Django (5.2), containerised using Docker and now contains a full suite of unit tests used for test driven development when creating this version of this application.
+                      <span class="fw-bolder update-text">New Release (v2.0):</span><br><br>Migrated to the latest version of Django (5.2), containerised using Docker<i class="fa-brands fa-docker"></i> and now contains a full suite of unit tests used for test driven development when creating this version of this application.
                     </p>
 
                   </div>
@@ -601,25 +624,27 @@
                   <div class="card-footer">
 
                     <!-- card links -->
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
-                      <li class="ms-2">Python</li>
-                      <li class="ms-2">PostgreSQL</li>
-                      <li class="ms-2">Django</li>
-                      <li class="ms-2">Docker</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="ms-2">Python<img src="assets/images/python-logo-only.svg" alt="Python logo" class="django-logo"></li>
+                      <li class="ms-2">PostgreSQL<img src="assets/images/Postgresql_elephant.svg" alt="PostgreSQL logo" class="postgres-logo"></li>
+                      <li class="ms-2">Django<img src="assets/images/django.svg" alt="Django logo" class="django-logo"></li>
+                      <li class="ms-2">Docker&nbsp<i class="fa-brands fa-docker docker-logo-color"></i></li>
+                      <li class="mx-2">Render.com&nbsp;<i class="fa-solid fa-cloud db-logo-color"></i></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
 
                     <a href="https://ocean-basket-v2-0-app.onrender.com/" target="_blank" rel="noopener" data-bs-toggle="tooltip"
-                    data-bs-title="May take up to 50 seconds on initial launch"  class="btn btn-primary" data-bs-custom-class="custom-tooltip"> <!-- link not available yet (https://ocean-basket.herokuapp.com/ -  target="_blank" rel="noopener") -->
+                    data-bs-title="May take up to 50 seconds on initial launch"  class="btn btn-primary mt-1" data-bs-custom-class="custom-tooltip"> <!-- link not available yet (https://ocean-basket.herokuapp.com/ -  target="_blank" rel="noopener") -->
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/ocean-basket-restaurant" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/ocean-basket-restaurant" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo v1.0</span>
                     </a>
                     <a href="https://github.com/Joao4569/ocean_basket_2.0" target="_blank" rel="noopener" class="btn btn-primary mt-1">
@@ -657,29 +682,31 @@
                   <div class="card-footer">
 
                     <!-- card links -->
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
-                      <li class="ms-2">Python</li>
-                      <li class="ms-2">PostgreSQL</li>
-                      <li class="ms-2">Django</li>
-                      <li class="ms-2">Bootstrap</li>
-                      <li class="ms-2">Stripe</li>
-                      <li class="ms-2">AWS S3</li>
-                      <li class="ms-2">ElephantSQL</li>
-                      <li class="ms-2">MailChimp</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="ms-2">Python<img src="assets/images/python-logo-only.svg" alt="Python logo" class="django-logo"></li>
+                      <li class="ms-2">PostgreSQL<img src="assets/images/Postgresql_elephant.svg" alt="PostgreSQL logo" class="postgres-logo"></li>
+                      <li class="ms-2">Django<img src="assets/images/django.svg" alt="Django logo" class="django-logo"></li>
+                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
+                      <li class="ms-2">Stripe<img src="assets/images/stripe-svgrepo-com.svg" alt="Stripe logo" class="stripe-logo"></li>
+                      <li class="ms-2">AWS S3<img src="assets/images/Amazon-S3-Logo.svg" alt="AWS S3 logo" class="aws-s3-logo"></li>
+                      <li class="ms-2">ElephantSQL&nbsp;<i class="fa-solid fa-database db-logo-color"></i></li>
+                      <li class="ms-2">MailChimp<img src="assets/images/mailchimp-svgrepo-com.svg" alt="Mailchimp logo" class="aws-s3-logo"></li>
+                      <li class="mx-2">Heroku<img src="assets/images/heroku-icon-svgrepo-com.svg" alt="Heroku logo" class="heroku-logo"></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
 
                     <a href="#farm-fresh" target="_blank" rel="noopener" data-bs-toggle="tooltip"
-                    data-bs-title="Site under construction - Updating Django from 3.2 to 5.2, containerise using Docker and much more!" data-bs-custom-class="custom-tooltip" class="btn btn-primary"> <!-- https://farm-fresh-jch.herokuapp.com/ -  target="_blank" rel="noopener" -->
+                    data-bs-title="Site under construction - Updating Django from 3.2 to 5.2, containerise using Docker and much more!" data-bs-custom-class="custom-tooltip" class="btn btn-primary mt-1"> <!-- https://farm-fresh-jch.herokuapp.com/ -  target="_blank" rel="noopener" -->
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/farm_fresh" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/farm_fresh" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -726,7 +753,7 @@
             <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
 
               <!-- sith-ly the best card -->
-              <div class="col">
+              <div class="col" id="sith-ly-the-best">
                 <div class="card project-card">
 
                   <!-- card header -->
@@ -758,23 +785,25 @@
                   <div class="card-footer">
 
                     <!-- card links -->
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
-                      <li class="ms-2">Python</li>
-                      <li class="ms-2">Django</li>
-                      <li class="ms-2">PostgreSQL</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="ms-2">Python<img src="assets/images/python-logo-only.svg" alt="Python logo" class="django-logo"></li>
+                      <li class="ms-2">Django<img src="assets/images/django.svg" alt="Django logo" class="django-logo"></li>
+                      <li class="ms-2">PostgreSQL<img src="assets/images/Postgresql_elephant.svg" alt="PostgreSQL logo" class="postgres-logo"></li>
+                      <li class="mx-2">Heroku<img src="assets/images/heroku-icon-svgrepo-com.svg" alt="Heroku logo" class="heroku-logo"></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
 
-                    <a href="https://sith-ly-the-best.herokuapp.com/" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://sith-ly-the-best.herokuapp.com/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/sith_ly_the_best" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/sith_ly_the_best" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -821,24 +850,26 @@
                   <div class="card-footer">
 
                     <!-- card links -->
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
-                      <li class="ms-2">Python</li>
-                      <li class="ms-2">Django</li>
-                      <li class="ms-2">Tailwind CSS</li>
-                      <li class="ms-2">PostgreSQL</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="ms-2">Python<img src="assets/images/python-logo-only.svg" alt="Python logo" class="django-logo"></li>
+                      <li class="ms-2">Django<img src="assets/images/django.svg" alt="Django logo" class="django-logo"></li>
+                      <li class="ms-2">Tailwind CSS<img src="assets/images/Tailwind_CSS_Logo.svg" alt="Tailwind CSS logo" class="twcss-logo"></li>
+                      <li class="ms-2">PostgreSQL<img src="assets/images/Postgresql_elephant.svg" alt="PostgreSQL logo" class="postgres-logo"></li>
+                      <li class="mx-2">Heroku<img src="assets/images/heroku-icon-svgrepo-com.svg" alt="Heroku logo" class="heroku-logo"></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
 
-                    <a href="https://rainbowwarriors-3624423ecf9b.herokuapp.com/" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://rainbowwarriors-3624423ecf9b.herokuapp.com/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/RainbowWarriors" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/RainbowWarriors" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -882,24 +913,26 @@
                   <div class="card-footer">
 
                     <!-- card links -->
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
-                      <li class="ms-2">Bootstrap</li>
-                      <li class="ms-2">Leaflet</li>
-                      <li class="ms-2 me-2">REST Countries API</li>
-                      <li class="ms-2">Fáilte Ireland's API</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
+                      <li class="ms-2">Leaflet<img src="assets/images/leaflet-svgrepo-com.svg" alt="Leaflet logo" class="leaflet-logo"></li>
+                      <li class="ms-2 me-2">REST Countries API&nbsp;<i class="fa-solid fa-earth-africa db-logo-color"></i></li>
+                      <li class="ms-2 me-2">Fáilte Ireland's API<img src="assets/images/failte-ireland.svg" alt="Fáilte Ireland's logo" class="failte-ireland-logo"></li>
+                      <li class="mx-2">Netlify<img src="assets/images/netlify-svgrepo-com.svg" alt="Netlify logo" class="heroku-logo"></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
 
-                    <a href="https://musical-kataifi-25a4e4.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://musical-kataifi-25a4e4.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/lovin_summer" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/lovin_summer" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -944,23 +977,25 @@
                   <div class="card-footer">
 
                     <!-- card links -->
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
-                      <li class="ms-2">Bootstrap</li>
-                      <li class="ms-2">Django</li>
-                      <li class="ms-2">Kaboom.js</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
+                      <li class="ms-2">Django<img src="assets/images/django.svg" alt="Django logo" class="django-logo"></li>
+                      <li class="ms-2">Kaboom.js<img src="assets/images/kaboomjs.png" alt="Kaboom.js logo" class="django-logo"></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
+                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
 
-                    <a href="https://joao4569.github.io/Hack-Man/" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://joao4569.github.io/Hack-Man/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/Hack-Man" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/Hack-Man" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -985,7 +1020,7 @@
 
                     <!-- card titles -->
                     <h5 class="card-title mb-2 mt-1">
-                      Hack-Man
+                      Starathon
                     </h5>
 
                     <!-- card text -->
@@ -1005,20 +1040,22 @@
                   <div class="card-footer">
 
                     <!-- card links -->
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
+                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
 
-                    <a href="https://efthymiakakoulidou.github.io/starathon/index.html" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://efthymiakakoulidou.github.io/starathon/index.html" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/starathon" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/starathon" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -1065,7 +1102,7 @@
             <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
 
               <!-- lerncare card -->
-              <div class="col">
+              <div class="col" id="lern-care">
                 <div class="card project-card">
 
                   <!-- card image -->
@@ -1090,24 +1127,26 @@
                   <div class="card-footer">
 
                     <!-- card links -->
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
-                      <li class="ms-2">Python</li>
-                      <li class="ms-2">Bootstrap</li>
-                      <li class="ms-2">Django</li>
-                      <li class="ms-2">PostgreSQL</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="ms-2">Python<img src="assets/images/python-logo-only.svg" alt="Python logo" class="django-logo"></li>
+                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
+                      <li class="ms-2">Django<img src="assets/images/django.svg" alt="Django logo" class="django-logo"></li>
+                      <li class="ms-2">PostgreSQL<img src="assets/images/Postgresql_elephant.svg" alt="PostgreSQL logo" class="postgres-logo"></li>
+                      <li class="mx-2">Heroku<img src="assets/images/heroku-icon-svgrepo-com.svg" alt="Heroku logo" class="heroku-logo"></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
 
-                    <a href="https://lerncare-13184912aa8c.herokuapp.com/dashboard/#" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://lerncare-13184912aa8c.herokuapp.com/dashboard/#" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/lerncare" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/lerncare" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
@@ -1142,22 +1181,24 @@
                   <div class="card-footer">
 
                     <!-- card links -->
-                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Tech Stack
                     </a>
                   
                     <ul class="dropdown-menu">
-                      <li class="ms-2">HTML</li>
-                      <li class="ms-2">CSS</li>
-                      <li class="ms-2">JavaScript</li>
-                      <li class="ms-2">Bootstrap</li>
-                      <li class="ms-2">EmailJS</li>
+                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
+                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
+                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="JavaScript logo" class="stripe-logo"></li>
+                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
+                      <li class="ms-2">EmailJS<img src="assets/images/email-js.svg" alt="EmailJS logo" class="django-logo"></li>
+                      <li class="mx-2">Infomaniak<img src="assets/images/infomaniak-svgrepo-com.svg" alt="Infomaniak logo" class="heroku-logo"></li>
+                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="GitHub logo" class="aws-s3-logo"></li>
                     </ul>
 
-                    <a href="https://www.savo-tieraerzte.ch/" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://www.savo-tieraerzte.ch/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
                     </a>
-                    <a href="https://github.com/Joao4569/SAVO" target="_blank" rel="noopener" class="btn btn-primary">
+                    <a href="https://github.com/Joao4569/SAVO" target="_blank" rel="noopener" class="btn btn-primary mt-1">
                       <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
                     </a>
                   </div>
