@@ -17,7 +17,7 @@
 <body class="custom-background">
 
   <!-- navbar -->
-  <nav class="navbar navbar-expand-md custom-background" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md" data-bs-theme="dark">
     <div class="container-fluid">
       <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownmenu"
         aria-controls="dropdownmenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,28 +25,26 @@
       </button>
       <div class="row fw-semibold collapse navbar-collapse ms-3" id="dropdownmenu">
         <ul class="navbar-nav aux-text justify-content-center">
-          <li class="nav-item my-auto border-bottom">
-            <a class="nav-link white-font navbar-text" href="#my-projects">
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle navbar-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Projects
             </a>
-          </li>
-          <li class="nav-item my-auto border-bottom">
-            <a class="nav-link white-font navbar-text" href="#hackathons">
-              Hackathons
-            </a>
-          </li>
-          <li class="nav-item my-auto border-bottom">
-            <a class="nav-link white-font navbar-text" href="#freelance">
-              Freelance
-            </a>
-          </li>
-          <li class="nav-item my-auto border-bottom">
-            <a class="nav-link white-font navbar-text" href="https://github.com/Joao4569" target="_blank" rel="noopener">
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#tutorial-projects">Tutorial Projects</a></li>
+              <li><a class="dropdown-item" href="#custom-projects">Custom Built Projects</a></li>
+              <li><a class="dropdown-item" href="#hackathon-projects">Hackathon Projects</a></li>
+              <li><a class="dropdown-item" href="#freelance-projects">Freelance Projects</a></li>
+            </ul>
+          </div>
+          
+          <li class="nav-item my-auto">
+            <a class="nav-link navbar-text" href="https://github.com/Joao4569" target="_blank" rel="noopener">
               GitHub
             </a>
           </li>
-          <li class="nav-item my-auto border-bottom">
-            <a class="nav-link white-font navbar-text" href="https://www.linkedin.com/in/jo%C3%A3o-rodrigues-3669a5b5/" target="_blank" rel="noopener">
+          <li class="nav-item my-auto">
+            <a class="nav-link navbar-text" href="https://www.linkedin.com/in/jo%C3%A3o-rodrigues-3669a5b5/" target="_blank" rel="noopener">
               LinkedIn
             </a>
           </li>
@@ -56,20 +54,19 @@
   </nav>
 
   <!-- hero section -->
-  <div class="container-fluid blk-background" id="hero">
+  <div class="container-fluid" id="hero">
     <div class="row py-4">
 
       <!-- hero titles -->
       <div class="col-12 col-xxl-6 my-auto hero-text">
-        <h1 class="hero-title white-font font-roboto">
+        <h1 class="hero-title">
           Jo&atildeo Rodrigues
         </h1>
-        <h2 class="hero-title color-custom font-roboto">
+        <h2 class="hero-job-title mt-3">
           Full Stack Developer
         </h2>
-        <p class="subtitle-text white-font font-kanit">
-          From South Africa, currently based in Zürich, Switzerland.<br>
-          I was a Nature Guide and switched careers into Software Development.
+        <p class="subtitle-text mt-4">
+          Junior Web Developer with a Full Stack Software Development Diploma from Code Institute. Proficient in HTML, CSS, JavaScript, Python, Bootstrap and Django, and currently mastering the React JS Library.
         </p>
       </div>
 
@@ -80,887 +77,1063 @@
       </div>
     </div>
   </div>
-   
-  <!-- my personal projects section -->
-  <div class="container projects-margin">
 
-    <!-- title -->
-    <div class="row mt-5">
-      <h3 class="body-title font-roboto color-custom" id="my-projects">
-        My Personal Projects
-      </h3>
-    </div>
-
-    <!-- title intro -->
-    <div class="row mt-2">
-      <p class="subtitle-text">
-        Here are my personal projects that I've made in order to learn new skills and build up my<br>
-        professional portfolio, feedback is always appreciated!
-      </p>
-      <p>
-        <br><br>
-        <i class="fa-regular fa-file-lines diploma color-custom blk-background p-2 rounded"></i>
-        <span class="copyright-text"><i class="fa-solid fa-arrow-right"></i>  Indicates a Diploma project with full documentation</span>
-      </p>
-    </div>
-
-  </div>
-
-  <!-- personal project cards section -->
-  <div class="container">
-    <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
-
-      <!-- becentered card -->
+  <div class="container-fluid">
+    <div class="row">
       <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <i class="fa-regular fa-file-lines diploma color-custom"></i><span>&nbsp BeCentered</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/be_centered.png" class="card-img-top"
-            alt="Thumbnail of BeCentered project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML and CSS
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              An E-commerce site for a yoga and meditation instructor based in Zürich, Switzerland.This was my first project for assessment at Code Institute.
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-
-            <!-- card links -->
-            <a href="https://joao4569.github.io/be-centered/" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/be-centered" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
-          </div>
-
-        </div>
+        <h1>Latest Releases</h1>
+        <p>Well firstly this Portfolio site is a brand new update. I structured the content in an easier to read structure and implemented a new colour pallete across the site for a more contemporary and vibrant feel.</p>
+        <p>Secondly, I released version 2.0 of <a id="ocean-basket-link" class="" href="">Ocean Basket</a>, <a id="farm-fresh-link" class="" href="">Farm Fresh</a></p>
       </div>
-
-      <!-- random trivia card -->
-      <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <i class="fa-regular fa-file-lines diploma color-custom"></i><span>&nbsp Random Trivia</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/random_trivia.png" class="card-img-top"
-            alt="Thumbnail of Random Trivia project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS and Javascript
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              An interactive front-end application that provides the user with a trivia game.This was my second project for assessment at Code Institute.
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-            <!-- card links -->
-            <a href="https://joao4569.github.io/random-trivia/" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/random-trivia" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- survey data capture card -->
-      <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <i class="fa-regular fa-file-lines diploma color-custom"></i><span>&nbsp Survey Data Capture</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/survey_data_capture.png" class="card-img-top"
-            alt="Thumbnail of Survey Data Capture project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              Python with a custom terminal window
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              This is a Python terminal application, which runs in the Code Institute mock 
-              terminal on Heroku. It is designed to capture survey data from users and allow
-              users to view a summary of the captured data.This was my third project for assessment at Code Institute.
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-            <!-- card links -->
-            <a href="https://survey-data-capture-extract.herokuapp.com/" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site &#40 PC Only! &#41</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/survey-data-capture-and-analyse" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- ocean basket card -->
-      <div class="col" id="ocean-basket">  <!-- id only for link in card to site to navigate to card-->
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <i class="fa-regular fa-file-lines diploma color-custom"></i><span>&nbsp Ocean Basket Restaurant</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/ocean_basket.png" class="card-img-top"
-            alt="Thumbnail of Ocean Basket Restaurant project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS, JavaScript, Python and Postgres DB
-              with Bootstrap, Django and Docker
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              E-commerce application for a restaurant bookings system showcasing the use of a Full 
-              Stack Toolkit and CRUD functionality.This was my fourth project for assessment at Code Institute.
-            </p>
-
-            <p class="info-text white-font my-3">
-              Now updated to the latest version of Django 5.2, containerised using Docker and now contains a full suite of unit tests used for test driven development when creating version 2.0 of this application.
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-            <!-- card links -->
-            <a href="https://ocean-basket-v2-0-app.onrender.com/" target="_blank" rel="noopener" data-bs-toggle="tooltip"
-            data-bs-title="May take up to 50 seconds on initial launch" class="card-link" data-bs-custom-class="custom-tooltip"
-            > <!-- link not available yet (https://ocean-basket.herokuapp.com/ -  target="_blank" rel="noopener") -->
-              <i class="fa-solid fa-link white-font white-font icons"><span class="icon-font-size"> Site</span></i>
-            </a>
-            <a href="https://github.com/Joao4569/ocean-basket-restaurant" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons"><span class="icon-font-size"> Repo v1.0</span></i>
-            </a>
-            <a href="https://github.com/Joao4569/ocean_basket_2.0" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons"><span class="icon-font-size"> Repo v2.0</span></i>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- farm fresh card -->
-      <div class="col" id="farm-fresh">  <!-- id only for link in card to site to navigate to card, for the tooltips-->
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <i class="fa-regular fa-file-lines diploma color-custom"></i><span>&nbsp Farm Fresh</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/farm_fresh.png" class="card-img-top"
-            alt="Thumbnail of Farm fresh project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS, JavaScript, Python and Postgres DB
-              with Bootstrap, Django, Stripe API, AWS S3 and ElephantSQL
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              Full Stack E-commerce application for an online store based in Zürich, providing 
-              customers with fresh produce on a secure and user friendly platform.This was my fifth and
-              final project for assessment at Code Institute.
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-            <!-- card links -->
-            <a href="#farm-fresh" data-bs-toggle="tooltip"
-              data-bs-title="Site under construction - Updating Django from 3.2 to 5.2, containerise using Docker and much more!" class="card-link" data-bs-custom-class="custom-tooltip"
-            ><!-- https://farm-fresh-jch.herokuapp.com/ -  target="_blank" rel="noopener" -->
-              <i class="fa-solid fa-link white-font white-font icons"><span class="icon-font-size"> Site</span></i>
-            </a>
-            <a href="https://github.com/Joao4569/farm_fresh" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons"><span class="icon-font-size"> Repo</span></i>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- love running card -->
-      <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <span>Love Running</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/love_running.png" class="card-img-top"
-            alt="Thumbnail of Love Running project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML and CSS
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              A front end website for a running club based in Ireland.
-              My first full website using basic front end technologies.
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-            <!-- card links -->
-            <a href="https://joao4569.github.io/love_running/" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/love_running" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- love maths card -->
-      <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <span>Love Maths</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/love_maths.png" class="card-img-top"
-            alt="Thumbnail of Love Maths project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS and Javascript
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              An interactive front-end application that provides the user with a simple maths game.
-              This was my first attempt at building a simple front-end application with Javascript.
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-            <!-- card links -->
-            <a href="https://joao4569.github.io/love-maths/" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/love-maths" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- task manager card -->
-      <div class="col" id="task-manager">  <!-- id only for link in card to site to navigate to card, for the tooltips-->
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <span>Task Manager</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/task_manager.png" class="card-img-top"
-            alt="Thumbnail of Task Manager project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS, JavaScript and Python
-              with Bootstrap, Materialize, Flask and SQLalchemy
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              This is a simple Task Manager application as my first experience with using Flask and SQLalchemy.
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-            <!-- card links -->
-            <a href="#task-manager" data-bs-toggle="tooltip"
-              data-bs-title="Site under construction - Moving Database to a new host!" class="card-link" data-bs-custom-class="custom-tooltip"
-            ><!-- https://flask-sqlalchemy-task-managerj.herokuapp.com/ -  target="_blank" rel="noopener" -->
-              <i class="fa-solid fa-link white-font white-font icons"><span class="icon-font-size"> Site</span></i>
-            </a>
-            <a href="https://github.com/Joao4569/flask-sqlalchemy-task-manager" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons"><span class="icon-font-size"> Repo</span></i>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- bootstrap resume card -->
-      <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <span>Bootstrap Resume</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/bootstrap_resume.png" class="card-img-top"
-            alt="Thumbnail of Bootstrap Resume project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS and Javascript with Bootstrap
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              An online resume for "Rosie Odenkirk" a fictitious Full Stack software developer.
-              This was my first website built using Bootstrap.
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-            <!-- card links -->
-            <a href="https://joao4569.github.io/bootstrap-resume/" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/bootstrap-resume" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- João's Recipes card -->
-      <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <span>João's Recipe's</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/joaos-recipes.png" class="card-img-top"
-            alt="Thumbnail of the João's Recipe's project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS and Javascript with Bootstrap and EmailJS
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              This was a project that I created as part of my application process while applying for a place in the Power Coders bootcamp in Zürich, Switzerland.<br/><br>
-
-              It is a simple static recipe website consisting of a number of pages, a functional contact form, a custom styled privacy policy page and a very basic readme file that I build over 3 days as an additional task request by Power Coders.<br/><br>
-
-              I hosted the project on Netlify with it auto deploying from my GitHub repository.<br/>
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-            <!-- card links -->
-            <a href="https://joao-rodrigues-pc-recipe-website.netlify.app/" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/pc-recipe-website" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
     </div>
   </div>
 
-  <!-- hackathon section -->
-  <div class="container projects-margin">
+  <!-- projects accordion -->
+  <div class="accordion" id="accordionExample">
 
-    <!-- title -->
-    <div class="row mt-5">
-      <h3 class="body-title font-roboto color-custom mt-3" id="hackathons">
-        Hackathons
-      </h3>
+    <!-- tutorial projects section -->
+    <div class="accordion-item projects-margin">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"           aria-controls="collapseOne">
+          <!-- tutorial projects title -->
+          <div class="container" id="tutorial-projects">
+
+            <!-- title -->
+            <div class="row">
+              <h3 class="body-title">
+                Tutorial Projects
+              </h3>
+            </div>
+
+            <!-- title intro -->
+            <div class="row mt-2">
+              <p class="subtitle-text">
+                These are projects that I built while learning the basics of web development.
+              </p>
+            </div>
+
+          </div>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <!-- tutorial projects cards section -->
+          <div class="container">
+            <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
+
+              <!-- love running card -->
+              <div class="col">
+                <div class="card project-card">
+
+                  <!-- card image -->
+                  <img src="./assets/images/love_running.png" class="card-img-top"
+                    alt="Thumbnail of Love Running project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Love Running
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      A front end website for a running club based in Ireland.
+                      My first full website using basic front end technologies.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item tech-stack">HTML</li>
+                      <li class="dropdown-item tech-stack">CSS</li>
+                    </ul>
+                    <a href="https://joao4569.github.io/love_running/" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/love_running" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- love maths card -->
+              <div class="col">
+                <div class="card project-card">
+
+                  <!-- card image -->
+                  <img src="./assets/images/love_maths.png" class="card-img-top"
+                    alt="Thumbnail of Love Maths project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Love Maths
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      An interactive front-end application that provides the user with a simple maths game.
+                      This was my first attempt at building a simple front-end application with Javascript.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                    </ul>
+                    <a href="https://joao4569.github.io/love-maths/" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/love-maths" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- online resume card -->
+              <div class="col">  <!-- id only for link in card to site to navigate to card, for the tooltips-->
+                <div class="card project-card">
+
+                  <!-- card image -->
+                  <img src="./assets/images/bootstrap_resume.png" class="card-img-top"
+                    alt="Thumbnail of the Online Resume project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Online Resume
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      An online resume for "Rosie Odenkirk" a fictitious Full Stack software developer.
+                      This was my first website built using Bootstrap.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">Bootstrap</li>
+                    </ul>
+                    <a href="https://joao4569.github.io/bootstrap-resume/" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/bootstrap-resume" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- task manager card -->
+              <div class="col" id="task-manager">  <!-- id only for link in card to site to navigate to card, for the tooltips-->
+                <div class="card project-card">
+
+                  <!-- card image -->
+                  <img src="./assets/images/task_manager.png" class="card-img-top"
+                    alt="Thumbnail of the Task Manager project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Task Manager
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      This is a simple Task Manager application as my first experience with using Flask and SQLalchemy.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">Python</li>
+                      <li class="ms-2">Bootstrap</li>
+                      <li class="ms-2">Materialize</li>
+                      <li class="ms-2">Flask</li>
+                      <li class="ms-2">SQLalchemy</li>
+                    </ul>
+                    <a href="#task-manager" data-bs-toggle="tooltip"
+                      data-bs-title="Site under construction: Moving Database to a new host!" class="btn btn-primary" data-bs-custom-class="custom-tooltip"
+                    ><!-- https://flask-sqlalchemy-task-managerj.herokuapp.com/ -  target="_blank" rel="noopener" -->
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/flask-sqlalchemy-task-manager" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- title intro -->
-    <div class="row mt-2">
-      <p class="subtitle-text">
-        These are Hackathon projects that I've been a part of together with team members.
-      </p>
+    <!-- custom projects section -->
+    <div class="accordion-item projects-margin">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"           aria-controls="collapseTwo">
+          <!-- Custom projects title -->
+          <div class="container" id="custom-projects">
+
+            <!-- title -->
+            <div class="row">
+              <h3 class="body-title">
+                Custom Built Projects
+              </h3>
+            </div>
+
+            <!-- title intro -->
+            <div class="row mt-2">
+              <p class="subtitle-text">
+                These are projects that I custom built from the ground up using the skills that I have learnt thus far.
+              </p>
+            </div>
+
+          </div>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <!-- Custom projects cards section -->
+          <div class="container">
+            <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
+
+              <!-- becentered card -->
+              <div class="col">
+                <div class="card project-card">
+
+                  <!-- card image -->
+                  <img src="./assets/images/be_centered.png" class="card-img-top"
+                    alt="Thumbnail of BeCentered project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      BeCentered
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      An E-commerce site for a yoga and meditation instructor based in Zürich, Switzerland.This was my first project for assessment at Code Institute.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                    </ul>
+
+                    <a href="https://joao4569.github.io/be-centered/" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/be-centered" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- random trivia card -->
+              <div class="col">
+                <div class="card project-card">
+
+                  <!-- card image -->
+                  <img src="./assets/images/random_trivia.png" class="card-img-top"
+                    alt="Thumbnail of the Random Trivia project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Random Trivia
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      An interactive front-end application that provides the user with a trivia game.This was my second project for assessment at Code Institute.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                    </ul>
+
+                    <a href="https://joao4569.github.io/random-trivia/" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/random-trivia" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- survey data capture card -->
+              <div class="col">
+                <div class="card project-card">
+
+                  <!-- card image -->
+                  <img src="./assets/images/survey_data_capture.png" class="card-img-top"
+                    alt="Thumbnail of the Survey Data Capture project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Survey Data Capture
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      This is a Python terminal application, which runs in the Code Institute mock 
+                      terminal on Heroku. It is designed to capture survey data from users and allow
+                      users to view a summary of the captured data.This was my third project for assessment at Code Institute.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="mx-2">Python with a custom terminal window</li>
+                    </ul>
+
+                    <a href="https://survey-data-capture-extract.herokuapp.com/" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/survey-data-capture-and-analyse" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- joão's recipes card -->
+              <div class="col">
+                <div class="card project-card">
+
+                  <!-- card image -->
+                  <img src="./assets/images/joaos-recipes.png" class="card-img-top"
+                    alt="Thumbnail of the João's Recipes project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      João's Recipes
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      This was a project that I created as part of my application process while applying for a place in the Power Coders bootcamp in Zürich, Switzerland.<br/><br>
+
+                      It is a simple static recipe website consisting of a number of pages, a functional contact form, a custom styled privacy policy page and a very basic readme file that I build over 3 days as an additional task request by Power Coders.<br/><br>
+
+                      I hosted the project on Netlify with it auto deploying from my GitHub repository.<br/>
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">Bootstrap</li>
+                      <li class="ms-2">EmailJS</li>
+                    </ul>
+
+                    <a href="https://joao4569.github.io/random-trivia/" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/random-trivia" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- ocean basket card -->
+              <div class="col" id="ocean-basket">  <!-- id only for link in card to site to navigate to card-->
+                <div class="card project-card">
+
+                  <!-- card image -->
+                  <img src="./assets/images/Screenshot_ob_2.0.png" class="card-img-top"
+                    alt="Thumbnail of the Ocean Basket project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Ocean Basket
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      E-commerce application for a restaurant bookings system showcasing the use of a Full 
+                      Stack Toolkit and CRUD functionality. This was my fourth project for assessment at Code Institute.<br/><br>
+
+                      <span class="fw-bolder update-text">New Release (v2.0):</span><br><br>Migrated to the latest version of Django (5.2), containerised using Docker and now contains a full suite of unit tests used for test driven development when creating this version of this application.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">Python</li>
+                      <li class="ms-2">PostgreSQL</li>
+                      <li class="ms-2">Django</li>
+                      <li class="ms-2">Docker</li>
+                    </ul>
+
+                    <a href="https://ocean-basket-v2-0-app.onrender.com/" target="_blank" rel="noopener" data-bs-toggle="tooltip"
+                    data-bs-title="May take up to 50 seconds on initial launch"  class="btn btn-primary" data-bs-custom-class="custom-tooltip"> <!-- link not available yet (https://ocean-basket.herokuapp.com/ -  target="_blank" rel="noopener") -->
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/ocean-basket-restaurant" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo v1.0</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/ocean_basket_2.0" target="_blank" rel="noopener" class="btn btn-primary mt-1">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo v2.0</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- farm fresh card -->
+              <div class="col" id="farm-fresh">  <!-- id only for link in card to site to navigate to card, for the tooltips-->
+                <div class="card project-card">
+
+                  <!-- card image -->
+                  <img src="./assets/images/farm_fresh.png" class="card-img-top"
+                    alt="Thumbnail of the Farm Fresh project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Farm Fresh
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      Full Stack E-commerce application for an online store based in Zürich, providing 
+                      customers with fresh produce on a secure and user friendly platform.This was my fifth and
+                      final project for assessment at Code Institute.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">Python</li>
+                      <li class="ms-2">PostgreSQL</li>
+                      <li class="ms-2">Django</li>
+                      <li class="ms-2">Bootstrap</li>
+                      <li class="ms-2">Stripe</li>
+                      <li class="ms-2">AWS S3</li>
+                      <li class="ms-2">ElephantSQL</li>
+                      <li class="ms-2">MailChimp</li>
+                    </ul>
+
+                    <a href="#farm-fresh" target="_blank" rel="noopener" data-bs-toggle="tooltip"
+                    data-bs-title="Site under construction - Updating Django from 3.2 to 5.2, containerise using Docker and much more!" data-bs-custom-class="custom-tooltip" class="btn btn-primary"> <!-- https://farm-fresh-jch.herokuapp.com/ -  target="_blank" rel="noopener" -->
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/farm_fresh" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </div>
+    <!-- hackathon projects section -->
+    <div class="accordion-item projects-margin">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"           aria-controls="collapseThree">
+          <!-- hackathons title -->
+          <div class="container" id="hackathon-projects">
 
-  <!-- hackathon cards section -->
-  <div class="container">
-    <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
+            <!-- title -->
+            <div class="row">
+              <h3 class="body-title">
+                Hackathon Projects
+              </h3>
+            </div>
 
-      <!-- sith-ly the best card -->
-      <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <img src="./assets/images/sith-ly-the-best-badge-small.png" alt="Code Institute participation badge">
-            <span>Sith-ly the Best</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/sith-ly-the-best.png" class="card-img-top"
-            alt="Thumbnail of Sith-ly the Best project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS, Javascript and Python with Django
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              An interactive Star Wars memory game created for a Code Institute 5 day hackathon. We were 7 team members
-              and I was elected as the Scrum Master by my peers.<br><br>This was my first experience developing within a team and
-              was a valuable lesson for me.
-            </p>
+            <!-- title intro -->
+            <div class="row mt-2">
+              <p class="subtitle-text">
+                These are my Hackathon projects that I've created as part of a team, and up until now mostly as Scrum Master.
+              </p>
+            </div>
 
           </div>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <!-- hackathon cards section -->
+          <div class="container">
+            <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
 
-          <div class="card-footer text-body-secondary">
+              <!-- sith-ly the best card -->
+              <div class="col">
+                <div class="card project-card">
 
-            <!-- card links -->
-            <a href="https://sith-ly-the-best.herokuapp.com/" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/sith_ly_the_best" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
+                  <!-- card header -->
+                  <div class="card-header mt-3 mb-3 text-center">
+                    <img src="./assets/images/sith-ly-the-best-badge-small.png" alt="Code Institute participation badge">
+                  </div>
 
+                  <!-- card image -->
+                  <img src="./assets/images/sith-ly-the-best.png" class="card-img-top"
+                    alt="Thumbnail of Sith-ly the Best project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Sith-ly the Best
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      An interactive Star Wars memory game created for a Code Institute 5 day hackathon. We were 7 team members
+                      and I was elected as the Scrum Master by my peers.<br><br>
+                      This was my first experience developing within a team and
+                      was a valuable lesson for me.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">Python</li>
+                      <li class="ms-2">Django</li>
+                      <li class="ms-2">PostgreSQL</li>
+                    </ul>
+
+                    <a href="https://sith-ly-the-best.herokuapp.com/" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/sith_ly_the_best" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- rainbow warriors card -->
+              <div class="col">
+                <div class="card project-card">
+
+                  <!-- card header -->
+                  <div class="card-header mt-3 mb-3 text-center">
+                    <img src="./assets/images/sith-ly-the-best-badge-small.png" alt="Code Institute participation badge">
+                  </div>
+
+                  <!-- card image -->
+                  <img src="./assets/images/rainbow_warriors.png" class="card-img-top"
+                    alt="Thumbnail of Rainbow Warriors project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Rainbow Warriors
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      In the spirit of Pride we decided to construct a web application for members of the LGBTQ+ society,
+                      which would provide a platform for users to view and share resources within the community such as
+                      recommended books, movies, events and organizations etc. We were a team of 7 members and I was elected
+                      as Scrum Master for the project.<br><br>
+
+                      Unfortunately due to 2 members not participating and another
+                      struggling with severe imposter syndrome, those of us left over were not able to complete the project.<br><br>
+
+                      The judges of the hackathon gave us a honorable mention in the awards webinar as they really
+                      enjoyed our idea and valued our persistence as a team.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">Python</li>
+                      <li class="ms-2">Django</li>
+                      <li class="ms-2">Tailwind CSS</li>
+                      <li class="ms-2">PostgreSQL</li>
+                    </ul>
+
+                    <a href="https://rainbowwarriors-3624423ecf9b.herokuapp.com/" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/RainbowWarriors" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- lovin summer card -->
+              <div class="col">
+                <div class="card project-card">
+
+                  <!-- card header -->
+                  <div class="card-header mt-3 mb-3 text-center">
+                    <img src="./assets/images/CI_july_2023_hackathon_2nd_place_2023-07-19_small.png" alt="Code Institute participation badge">
+                  </div>
+
+                  <!-- card image -->
+                  <img src="./assets/images/lovin-summer.png" class="card-img-top"
+                    alt="Thumbnail of  project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Lovin Summer
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      Lovin Summer is a joint initiative by Tourism Ireland, the Department of Foreign Affairs and the
+                      Department of Health with the aim of promoting healthy lifestyles during the summer in Ireland by
+                      providing inspiration and ideas for locals and visitors to explore all that our country has to offer
+                      with a mobile first design approach. We were a team of 7 members, mostly first time participants,
+                      and I volunteered to be Scrum Master for the project.<br><br>
+                      We were all extremely motivated and committed to producing the best product that we could within the given 5 days<br><br>
+                      This time we achieved 2nd place in the Hackathon.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">Bootstrap</li>
+                      <li class="ms-2">Leaflet</li>
+                      <li class="ms-2 me-2">REST Countries API</li>
+                      <li class="ms-2">Fáilte Ireland's API</li>
+                    </ul>
+
+                    <a href="https://musical-kataifi-25a4e4.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/lovin_summer" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- hack-man card -->
+              <div class="col">
+                <div class="card project-card">
+
+                  <!-- card header -->
+                  <div class="card-header mt-3 mb-3 text-center">
+                    <img src="./assets/images/sith-ly-the-best-badge-small.png" alt="Code Institute participation badge">
+                  </div>
+
+                  <!-- card image -->
+                  <img src="./assets/images/hack-man-maze2.png" class="card-img-top"
+                    alt="Thumbnail of Hack-Man project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Hack-Man
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      Our goal for this hackathon was to create a front-end only retro inspired game, as a team we voted and decided to create
+                      Hack-Man which is based on the concept of Pac-Man, n arcade video game that was made by Namco and released in 1980.<br><br>
+
+                      We were a team consisting of 6 members, mostly first time participants that had very little experience with version control.
+                      I volunteered to be Scrum Master for the project.<br><br>
+                      
+                      We were all extremely motivated and committed to producing the best version of the game
+                      that we could within the given 5 days.<br><br>
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">Bootstrap</li>
+                      <li class="ms-2">Django</li>
+                      <li class="ms-2">Kaboom.js</li>
+                    </ul>
+
+                    <a href="https://joao4569.github.io/Hack-Man/" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/Hack-Man" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- starathon card -->
+              <div class="col">
+                <div class="card project-card">
+
+                  <!-- card header -->
+                  <div class="card-header mt-3 mb-3 text-center">
+                    <img src="./assets/images/sith-ly-the-best-badge-small.png" alt="Code Institute participation badge">
+                  </div>
+
+                  <!-- card image -->
+                  <img src="./assets/images/Starathon_2025-01-05.png" class="card-img-top"
+                    alt="Thumbnail of Starathon project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Hack-Man
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      Starathon is a fun interactive front-end web application presented in a quiz/trivia format. The quiz/trivia format consists of randomly selected questions based on the Star Wars franchise, in 3 difficulty levels where users can test their Star Wars knowledge. Youngling is the easy mode, Padawan is intermediate and well Grand Master speaks for itself!<br><br>
+
+                      The game contains lots of little sound bits from the franchise as this was one of our main goals for the project.<br><br>
+
+                      We were a team consisting of 5 members, mostly first time participants that had very little experience with version control.
+                      I was nominated by my team to be Scrum Master for the project.<br><br>
+                      
+                      We had some difficulties regarding time management but otherwise given everyone's skill level, I believe that we build a rather good game in the allocated time for the project.<br><br>
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                    </ul>
+
+                    <a href="https://efthymiakakoulidou.github.io/starathon/index.html" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/starathon" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
           </div>
-
         </div>
       </div>
-
-      <!-- rainbow warriors card -->
-      <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <img src="./assets/images/sith-ly-the-best-badge-small.png" alt="Code Institute participation badge">
-            <span>Rainbow Warriors</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/rainbow_warriors.png" class="card-img-top"
-            alt="Thumbnail of Rainbow Warriors project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS, Javascript and Python with Django and Tailwind CSS
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              In the spirit of Pride we decided to construct a web application for members of the LGBTQ+ society,
-              which would provide a platfrom for users to view and share resources within the community such as
-              recommended books, movies, events and orginisations etc. We were a team of 7 members and I was elected
-              as Scrum Master for the project.<br><br>Unfortunately due to 2 members not participating and another
-              struggling with severe imposter syndrome, those of us left over were not able to complete the project.
-              <br><br>The judges of the hackathon gave us a honourable mention in the awards webinar as they really
-              enjoyed our idea and valued our persistance as a team.
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-
-            <!-- card links -->
-            <a href="https://rainbowwarriors-3624423ecf9b.herokuapp.com/" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/RainbowWarriors" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
-
-          </div>
-
-        </div>
-      </div>
-
-      <!-- lovin summer card -->
-      <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <img src="./assets/images/CI_july_2023_hackathon_2nd_place_2023-07-19_small.png" alt="Code Institute participation badge">
-            <span>Lovin Summer</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/lovin-summer.png" class="card-img-top"
-            alt="Thumbnail of Lovin Summer project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS, Javascript Bootstrap, Leaflet, REST Countries API and Fáilte Ireland's Open Data API
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              Lovin Summer is a joint initiative by Tourism Ireland, the Department of Foreign Affairs and the
-              Department of Health with the aim of promoting healthy lifestyles during the summer in Ireland by
-              providing inspiration and ideas for locals and visitors to explore all that our country has to offer
-              with a mobile first design approach. We were a team of 7 members, mostly first time participants,
-              and I volunteered to be Scrum Master for the project.<br><br>We were all extremely motivated
-              and committed to producing the best product that we could within the given 5 days<br><br>This time we
-              achieved 2nd place in the Hackathon.
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-
-            <!-- card links -->
-            <a href="https://musical-kataifi-25a4e4.netlify.app/" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/lovin_summer" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
-
-          </div>
-
-        </div>
-      </div>
-
-      <!-- hack-man card -->
-      <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <img src="./assets/images/sith-ly-the-best-badge-small.png" alt="Code Institute participation badge">
-            <span>Hack-Man</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/hack-man-maze2.png" class="card-img-top"
-            alt="Thumbnail of Hack Man project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS, Javascript, Bootstrap and Kaboom.js
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              Our goal for this hackathon was to create a front-end only retro inspired game, as a team we voted and decided to create
-              Hack-Man which is based on the concept of Pac-Man, n arcade video game that was made by Namco and released in 1980.<br><br>
-
-              We were a team consisting of 6 members, mostly first time participants that had very little experience with version control.
-              I volunteered to be Scrum Master for the project.<br><br>
-              
-              We were all extremely motivated and committed to producing the best version of the game
-              that we could within the given 5 days.<br><br>
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-
-            <!-- card links -->
-            <a href="https://joao4569.github.io/Hack-Man/" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/Hack-Man" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
-
-          </div>
-
-        </div>
-      </div>
-
-      <!-- starathon card -->
-      <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <img src="./assets/images/sith-ly-the-best-badge-small.png" alt="Code Institute participation badge">
-            <span>Starathon</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/Starathon_2025-01-05.png" class="card-img-top"
-            alt="Thumbnail of Starathon project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS, and Javascript.
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              Starathon is a fun interactive front-end web application presented in a quiz/trivia format. The quiz/trivia format consists of randomly selected questions based on the Star Wars franchise, in 3 difficulty levels where users can test their Star Wars knowledge. Youngling is the easy mode, Padawan is intermediate and well Grand Master speaks for itself!<br><br>
-
-              The game contains lots of little sound bits from the franchise as this was one of our main goals for the project.<br><br>
-
-              We were a team consisting of 5 members, mostly first time participants that had very little experience with version control.
-              I was nominated by my team to be Scrum Master for the project.<br><br>
-              
-              We had some difficulties regarding time management but otherwise given everyone's skill level, I believe that we build a rather good game in the allocated time for the project.<br><br>
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-
-            <!-- card links -->
-            <a href="https://efthymiakakoulidou.github.io/starathon/index.html" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/starathon" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
-
-          </div>
-
-        </div>
-      </div>
-
     </div>
-  </div>
 
-  <!-- Freelance section -->
-  <div class="container projects-margin">
+    <!-- freelance projects section -->
+    <div class="accordion-item projects-margin">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"           aria-controls="collapseFour">
+          <!-- freelance title -->
+          <div class="container" id="freelance-projects">
 
-    <!-- title -->
-    <div class="row mt-5">
-      <h3 class="body-title font-roboto color-custom mt-3" id="freelance">
-        Freelance Projects
-      </h3>
-    </div>
+            <!-- title -->
+            <div class="row">
+              <h3 class="body-title">
+                Freelance Projects
+              </h3>
+            </div>
 
-    <!-- title intro -->
-    <div class="row mt-2">
-      <p class="subtitle-text">
-        These are my freelance projects that I have created for clients.
-      </p>
-    </div>
-
-  </div>
-
-  <!-- freelance cards section -->
-  <div class="container">
-    <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
-
-      <!-- lerncare card -->
-      <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <span>Lerncare</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/lerncare_2025-01-05.png" class="card-img-top"
-            alt="Thumbnail of Lerncare project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS, Javascript, Bootstrap and Python with Django
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              Lerncare is designed to be an application which can assist teachers in Switzerland with the various stresses and challenges involved with being a teacher during these high stress times where teachers are in short supply and sometimes taking on roles which they are not necessarily prepared for, due to the shortage of qualified teachers.<br><br>This project is currently incomplete as the client is awaiting further funding in order to continue the project.
-            </p>
+            <!-- title intro -->
+            <div class="row mt-2">
+              <p class="subtitle-text">
+                These are my freelance projects that I have created for clients and that have agreed to showcase them on my Portfolio.
+              </p>
+            </div>
 
           </div>
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <!-- freelance cards section -->
+          <div class="container">
+            <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
 
-          <div class="card-footer text-body-secondary">
+              <!-- lerncare card -->
+              <div class="col">
+                <div class="card project-card">
 
-            <!-- card links -->
-            <a href="https://lerncare-13184912aa8c.herokuapp.com/dashboard/#" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/lerncare" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
+                  <!-- card image -->
+                  <img src="./assets/images/lerncare_2025-01-05.png" class="card-img-top"
+                    alt="Thumbnail of the Lerncare project">
 
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      Lerncare
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      Lerncare is designed to be an application which can assist teachers in Switzerland with the various stresses and challenges involved with being a teacher during these high stress times where teachers are in short supply and sometimes taking on roles which they are not necessarily prepared for, due to the shortage of qualified teachers.<br><br>
+                      This project is currently incomplete and is on hold as per the client.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">Python</li>
+                      <li class="ms-2">Bootstrap</li>
+                      <li class="ms-2">Django</li>
+                      <li class="ms-2">PostgreSQL</li>
+                    </ul>
+
+                    <a href="https://lerncare-13184912aa8c.herokuapp.com/dashboard/#" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/lerncare" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- SAVO card -->
+              <div class="col">
+                <div class="card project-card">
+
+                  <!-- card image -->
+                  <img src="./assets/images/SAVO_2025-01-05.png" class="card-img-top"
+                    alt="Thumbnail of the SAVO project">
+
+                  <div class="card-body">
+
+                    <!-- card titles -->
+                    <h5 class="card-title mb-2 mt-1">
+                      SAVO
+                    </h5>
+
+                    <!-- card text -->
+                    <p class="card-text my-3">
+                      This site I  built for Swiss Association of Veterinary Ophthalmologists (SAVO). <br><br>
+                      This is a simple static site that provides it's users with information about the association and how to contact them.<br><br>
+                      This site is currently live and can be viewed at the link below.
+                    </p>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <!-- card links -->
+                    <a class="btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tech Stack
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li class="ms-2">HTML</li>
+                      <li class="ms-2">CSS</li>
+                      <li class="ms-2">JavaScript</li>
+                      <li class="ms-2">Bootstrap</li>
+                      <li class="ms-2">EmailJS</li>
+                    </ul>
+
+                    <a href="https://www.savo-tieraerzte.ch/" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
+                    </a>
+                    <a href="https://github.com/Joao4569/SAVO" target="_blank" rel="noopener" class="btn btn-primary">
+                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
           </div>
-
         </div>
       </div>
-
-      <!-- SAVO card -->
-      <div class="col">
-        <div class="card blk-background">
-
-          <div class="card-header color-custom mt-3 mb-3 font-roboto">
-            <span>SAVO</span>
-          </div>
-
-          <!-- card image -->
-          <img src="./assets/images/SAVO_2025-01-05.png" class="card-img-top"
-            alt="Thumbnail of SAVO project">
-
-          <div class="card-body">
-
-            <!-- card titles -->
-            <h5 class="card-title mb-2 white-font fw-semibold mt-1 color-custom font-roboto">
-              HTML, CSS, Javascript, Bootstrap and EmailJS
-            </h5>
-
-            <!-- card text -->
-            <p class="info-text white-font my-3">
-              This site I  built for Swiss Association of Veterinary Ophthalmologists (SAVO). <br><br>
-              This is a simple static site that provides it's users with information about the association and how to contact them.
-              <br><br>
-              This site is currently live and can be viewed at the link below.
-            </p>
-
-          </div>
-
-          <div class="card-footer text-body-secondary">
-
-            <!-- card links -->
-            <a href="https://www.savo-tieraerzte.ch/" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-solid fa-link white-font white-font icons">
-                <span class="icon-font-size"> Site</span>
-              </i>
-            </a>
-            <a href="https://github.com/Joao4569/SAVO" target="_blank" rel="noopener" class="card-link">
-              <i class="fa-brands fa-github white-font icons">
-                <span class="icon-font-size"> Repo</span>
-              </i>
-            </a>
-
-          </div>
-
-        </div>
-      </div>
-
     </div>
+
   </div>
 
   <!-- footer -->
@@ -1007,7 +1180,11 @@
   integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
 </script>
 
+<!-- Custom tooltip script -->
 <script src="assets/js/tooltips.js"></script>
+
+<!-- Custom card navigation script -->
+<script src="assets/js/card-navigation-links.js"></script>
 
 <!-- No javascript message -->
 <noscript>Your browser does not support JavaScript!</noscript>

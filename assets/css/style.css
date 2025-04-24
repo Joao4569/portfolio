@@ -1,10 +1,10 @@
 /* google fonts */
 
-/* roboto and roboto mono font*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@900&display=swap');
+/* Merriweather font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
-/* kanit font */
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+/* inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* best practice */
 
@@ -14,61 +14,71 @@
   border: none;
 }
 
+/* Custom CSS variables for color palette */
+:root {
+  --primary-accent: #EE6352; /* Bittersweet */
+  --secondary-accent: #3F84E5; /* Cambridge Blue */
+  --dark-neutral: #37393A; /* Onyx */
+  --light-neutral: #dadcdd; /* Platinum */
+  --white: #FFFFFF; /* White */
+  --interaction: #419BB4; /* White Smoke */
+  --highlight: #FBAF00 /* Selective Yellow */
+}
+
 /* page standards */
 
 body {
-  color: #FFF5F9 !important;
-  font-family: 'Kanit', sans-serif !important;
+  font-family: 'Merriweather', serif !important;
+  color: var(--dark-neutral);
+  background-color: var(--white);
+  padding: 20px;
 }
 
-/* colors and fonts */
-
-.blk-background {
-  background-color: #141212 !important;
+h1, h2, h3, h4, h5, h6, .dropdown-menu {
+  font-family: 'Inter', sans-serif !important;
+  color: var(--dark-neutral);
 }
 
-.custom-background {
-  /*background-color: #8f4e63 !important;*/
-  background-color: #4e1a2b !important;
-}
-
-.color-custom {
-  color: #ED5E93 !important;
-}
-
-.white-font {
-  color: #FFF5F9 !important;
-}
-
-.icons:hover, .navbar-text:hover, .social-links:hover {
-  color: #ED5E93 !important;
-}
-
-.card-link {
-  color: black;
-}
-
-.font-roboto {
-  font-family: 'Roboto', sans-serif;
-}
-
-.font-kanit {
-  font-family: 'Kanit', sans-serif !important;
-}
-
-/* navbar */
-
+/* Navbar */
 .aux-text {
   font-size: 1.5vh;
   letter-spacing: 1px;
 }
 
 .navbar-toggler {
-  font-size: small !important;
+  color: var(--dark-neutral) !important;
+  background-color: var(--light-neutral) !important; /* Coral color */
+  /* font-size: small !important; */
 }
 
-/* hero section */
+.navbar-text {
+  color: var(--dark-neutral) !important; /* Coral color */
+  font-weight: 700;
+  border-radius: 8px; /* Slightly rounded button */
+  transition: background-color 0.3s ease;
+  background-color: var(--white) !important; /* White background */
+  border: none !important; /* Remove default Bootstrap border */
+}
 
+.navbar-text:hover {
+  background-color: var(--interaction) !important; /* Coral color on hover */
+  color: var(--white) !important; /* White text on hover */
+}
+
+.dropdown-item {
+  color: var(--dark-neutral) !important;
+}
+
+.dropdown-item:hover {
+  background-color: var(--interaction) !important; /* Coral color on hover */
+  color: var(--white) !important; /* White text on hover */
+}
+
+.nav-link {
+  padding-left: 8px !important; /* Add padding to the left */
+}
+
+/* Hero Section */
 .hero-text {
   padding-left: 18vh !important;
 }
@@ -81,41 +91,124 @@ body {
   font-size: 2vh;
 }
 
-/* my projects section */
+#hero, .accordion-button {
+  background-color: var(--light-neutral) !important; /* Light grey background */
+  border-radius: 15px !important; /* Rounded corners for the card */
+}
+
+.hero-job-title {
+  color: var(--secondary-accent); /* Coral title color */
+  font-weight: 700; /* Bold title */
+}
+
+/* Styling for the project cards */
+
+.accordion-item {
+  border: none !important; /* Remove default Bootstrap border */
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: none !important; /* Remove top border for all but the first item */
+  margin-top: 2vh !important;
+  margin-bottom: 1vh !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important; /* Remove the default focus outline */
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow */
+}
+
+.accordion-button {
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow */
+}
 
 .body-title {
   font-size: 4vh;
 }
 
 .projects-margin {
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  background-color: var(--light-neutral);
+  border-radius: 15px !important;
+  padding: 1.2rem;
 }
 
-.diploma {
-  font-size: 2vh;
+.project-card {
+  border: none !important; /* Remove default Bootstrap border */
+  border-radius: 15px !important; /* Rounded corners for the card */
+  background-color: var(--light-neutral) !important; /* Light grey background */
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  overflow: hidden; /* Crucial: Hides parts of the image outside the rounded corners */
 }
 
-/* grid section */
+.project-card:hover {
+  transform: translateY(-8px); /* Lift card slightly on hover */
+}
+
+.project-card .card-img-top {
+  /* These radii match the card's top radii, combined with overflow: hidden on the parent,
+     makes the image appear rounded at the top corners. */
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+  height: 240px; /* Fixed height for images */
+  /* object-fit: cover; Cover the area without distortion */
+  width: 100%; /* Ensure image fills the width */
+  display: block; /* Remove potential extra space below image */
+  padding: 10px;
+}
+
+.project-card .card-title, .hero-title, .body-title {
+  color: var(--primary-accent); /* Coral title color */
+  font-weight: 700; /* Bold title */
+}
+
+.project-card .card-text, .subtitle-text {
+  color: var(--dark-neutral); /* Charcoal text color */
+}
+
+.project-card .btn-primary {
+  background-color: var(--secondary-accent); /* Teal button */
+  border-color: var(--secondary-accent);
+  font-family: 'Inter', sans-serif; /* Apply heading font to button */
+  font-weight: 700;
+  border-radius: 8px; /* Slightly rounded button */
+  transition: background-color 0.3s ease;
+}
+
+.project-card .btn-primary:hover {
+  background-color: var(--interaction); /* Slightly darker teal on hover */
+  border-color: var(--interaction);
+}
+
+.btn-primary:focus:hover {
+  background-color: var(--interaction) !important; /* Slightly darker teal on hover */
+  border-color: var(--interaction);
+}
+
+.project-card .card-footer {
+  border-top: none !important; /* Remove default Bootstrap border */
+  background-color: var(--light-neutral) !important; /* Light grey background */
+}
+
+.dropdown-menu {
+  background-color: var(--white) !important; /* Light grey background */
+}
+
+.tech-stack:hover {
+  background-color: var(--interaction) !important; /* Coral color on hover */
+  color: var(--white) !important; /* White text on hover */
+}
+
+.update-text {
+  color: var(--secondary-accent);
+  font-family: 'Inter', sans-serif !important;
+}
 
 .card-header {
-  font-size: 2vh;
-}
-
-.card-title {
-  font-size: 1.75vh;
-}
-
-.info-text {
-  font-size: 1.5vh;
-}
-
-.icon-font-size {
-  font-size: 1.1vh;
-}
-
-.icons {
-  font-size: 2vh;
+  border: none !important; /* Remove default Bootstrap border */
+  background-color: var(--light-neutral) !important; /* Light grey background */
 }
 
 /* footer */
@@ -130,6 +223,10 @@ body {
 
 .social-links {
   font-size: 2.5vh;
+}
+
+.social-links:hover {
+  color: var(--secondary-accent) !important; /* Coral color on hover */
 }
 
 /* media queries */
@@ -233,9 +330,11 @@ body {
 
 /* Tooltips */
 .tooltip-inner {
-  background-color: yellow !important;
-  color: black !important;
+  font-family: 'Merriweather', serif !important;
+  background-color: var(--dark-neutral) !important;
+  color: var(--highlight) !important;
   font-size: 1.5vh !important;
   font-weight: bold !important;
-  padding: 0.8vh !important;
+  padding: 1vh !important;
+  margin-bottom: 10px !important;
 }
