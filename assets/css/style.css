@@ -132,6 +132,11 @@ h1, h2, h3, h4, h5, h6, .dropdown-menu {
   margin-bottom: 1vh !important;
 }
 
+.accordion-item:hover{
+  background-color: var(--interaction) !important; /* Dark grey background on hover */
+  transition: 1.2s  ;
+}
+
 .accordion-button:focus {
   box-shadow: none !important; /* Remove the default focus outline */
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow */
