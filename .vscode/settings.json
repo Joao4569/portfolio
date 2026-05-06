@@ -40,5 +40,8 @@
       "SAVO",
       "sith",
       "starathon"
-   ]
+   ],
+   "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   }
 }
