@@ -1,17 +1,25 @@
 document.addEventListener('click', function (event) {
-  // Check if the clicked element has a data-project-link attribute
-  if (event.target.dataset.projectLink) {
+  const projectLink = event.target.closest('[data-project-link]');
+
+  // Check if the clicked element or one of its parents has a data-project-link attribute
+  if (projectLink) {
     event.preventDefault(); // Prevent default behavior
 
     // Get the project key from the data attribute
-    const projectKey = event.target.dataset.projectLink;
+    const projectKey = projectLink.dataset.projectLink;
 
     // Map project keys to their corresponding accordion and card ids by creating a dictionary
     // This allows for easy access to the ids based on the project key
     const projectMap = {
       'ocean-basket': { accordionId: 'collapseTwo', cardId: 'ocean-basket' },
       'farm-fresh': { accordionId: 'collapseTwo', cardId: 'farm-fresh' },
+      'lern-care': { accordionId: 'collapseFour', cardId: 'lern-care' },
+      'starathon': { accordionId: 'collapseThree', cardId: 'starathon' },
     };
+
+    if (!projectMap[projectKey]) {
+      return;
+    }
 
     // Get the corresponding accordion and card ids by destructuring the projectMap object
     // This allows us to easily access the ids without repeating the code

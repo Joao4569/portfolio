@@ -96,47 +96,106 @@
     </div>
   </div>
 
-  <!-- information -->
+  <!-- profile overview -->
   <div class="container-fluid" id="updates-and-plans">
 
-    <!-- latest releases -->
-    <div class="row mt-5 border-info-section">
-      <div class="col my-5">
-        <h2 class="body-title">Latest Releases</h2>
+    <!-- profile -->
+    <div class="row mt-5 border-info-section portfolio-intro">
+      <div class="col-12 col-lg-7">
+        <h2 class="body-title">What I Bring</h2>
         <p class="mt-3 px-4">
-          I'm excited to share the latest updates to my portfolio and projects, reflecting my commitment to continuous improvement and modern development practices.
+          I build full-stack web applications with Django, Python, JavaScript, Bootstrap, PostgreSQL, and modern deployment workflows. My strongest projects show practical backend engineering, authentication, payments, cloud storage, Docker, and production-minded problem solving.
         </p>
         <p class="mt-3 px-4">
-          <span class="body-subtitle">Portfolio Site Refresh:</span><br>
-          This portfolio site itself has undergone a significant update! I've restructured the content for enhanced readability and implemented a fresh, contemporary color palette and design to provide a more vibrant and engaging user experience.
+          Before moving into software development, I spent more than 15 years in management roles. That background shapes how I work: I care about clear communication, dependable delivery, user needs, and making technical decisions that serve real business goals.
         </p>
-        <p class="mt-3 px-4">
-          <span class="body-subtitle">Ocean Basket v2.0 and Farm Fresh v2.0:</span><br>
-          Addressing the end-of-life status of ElephantSQL and the aging Django 3.2/Python 3.9 dependencies, I've released a completely refactored version 2.0 of the <a data-project-link="ocean-basket" class="link-to-project-card" href="">Ocean Basket</a> and <a data-project-link="farm-fresh" class="link-to-project-card" href="">Farm Fresh</a> applications. These major upgrades include migrating to the latest Django version (5.2), containerizing the application using Docker for improved deployment and scalability, and with <a data-project-link="ocean-basket" class="link-to-project-card" href="">Ocean Basket</a> implementing a comprehensive suite of unit tests to support a robust Test-Driven Development (TDD) workflow on, which is coming to <a data-project-link="farm-fresh" class="link-to-project-card" href="">Farm Fresh</a> soon. These projects demonstrate my ability to modernize legacy applications, adopt containerization, and build reliable software through rigorous testing.
-        </p>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="profile-snapshot">
+          <span class="snapshot-label">Portfolio Focus</span>
+          <ul>
+            <li>Full-stack Django applications</li>
+            <li>Modernized legacy project deployments</li>
+            <li>Client and team-based delivery experience</li>
+            <li>Practical UX improvements with Bootstrap</li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <!-- current work -->
-    <div class="row mt-5 border-info-section">
-      <div class="col mt-5 mb-5">
-        <h2 class="body-title">Current Work</h2>
-        <p class="mt-3 px-4">
-          I am currently undertaking a significant upgrade and refactoring of the <a data-project-link="farm-fresh" class="link-to-project-card" href="">Farm Fresh</a> application. Similar to the recent work on Ocean Basket, this involves updating the core dependencies to the latest versions of Django and Python. I am also implementing Docker containerization to streamline deployment and development workflows, and integrating a comprehensive suite of unit tests to ensure code quality and support a Test-Driven Development approach. This project further demonstrates my commitment to maintaining robust, modern, and well-tested applications.
-        </p>
+    <!-- strengths -->
+    <div class="row mt-5 g-4 strength-grid">
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="strength-card">
+          <span>01</span>
+          <h3>Backend</h3>
+          <p>Django, Python, PostgreSQL, data models, authentication, payments, and server-side workflows.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="strength-card">
+          <span>02</span>
+          <h3>Frontend</h3>
+          <p>Responsive HTML, CSS, JavaScript, Bootstrap, accessibility-minded layouts, and UI polish.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="strength-card">
+          <span>03</span>
+          <h3>Delivery</h3>
+          <p>Docker, Render, Heroku, AWS S3, GitHub workflows, environment configuration, and deployments.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="strength-card">
+          <span>04</span>
+          <h3>Leadership</h3>
+          <p>Management experience, stakeholder communication, planning, team collaboration, and Scrum practice.</p>
+        </div>
       </div>
     </div>
 
-    <!-- future plans -->
-    <div class="row mt-5 border-info-section">
-      <div class="col mt-5 mb-5">
-        <h2 class="body-title">Future Plans</h2>
-        <p class="mt-3 px-4">
-          Looking ahead, a key focus of my development plans is to enhance the user interface and experience of my core projects. My next major undertaking involves building modern, dynamic frontends for both the <a data-project-link="ocean-basket" class="link-to-project-card" href="">Ocean Basket</a> and <a data-project-link="farm-fresh" class="link-to-project-card" href="">Farm Fresh</a> applications using the React JS library.
+    <!-- featured projects -->
+    <div class="featured-projects mt-5">
+      <div class="section-heading">
+        <h2 class="body-title">Featured Projects</h2>
+        <p class="subtitle-text">
+          A focused selection of projects that best represent my current full-stack, deployment, client, and collaboration skills.
         </p>
-        <p class="mt-3 px-4">
-          To facilitate seamless communication between these new React frontends and the existing Django/PostgreSQL backends, I will be developing robust APIs using the Django REST Framework. This will involve designing and implementing endpoints that allow the frontend applications to interact efficiently with the backend data and logic, further solidifying my skills in building full-stack applications with a decoupled architecture.
-        </p>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-2 g-4 mt-2">
+        <div class="col">
+          <a data-project-link="ocean-basket" class="featured-project-card" href="">
+            <img src="./assets/images/ocean_basket.png" alt="Thumbnail of the Ocean Basket project">
+            <span class="featured-tag">Full-stack ecommerce</span>
+            <h3>Ocean Basket</h3>
+            <p>Django 5.2, PostgreSQL, Stripe, Docker, Render, AWS S3, testing, and production deployment.</p>
+          </a>
+        </div>
+        <div class="col">
+          <a data-project-link="farm-fresh" class="featured-project-card" href="">
+            <img src="./assets/images/farm_fresh.png" alt="Thumbnail of the Farm Fresh project">
+            <span class="featured-tag">Backend modernization</span>
+            <h3>Farm Fresh</h3>
+            <p>Refactored ecommerce application with modern Django, Python, Docker, cloud media, and deployment workflows.</p>
+          </a>
+        </div>
+        <div class="col">
+          <a data-project-link="lern-care" class="featured-project-card" href="">
+            <img src="./assets/images/lerncare_2025-01-05.png" alt="Thumbnail of the Lerncare project">
+            <span class="featured-tag">Client application</span>
+            <h3>Lerncare</h3>
+            <p>A client-focused Django application shaped around specific professional needs and delivery constraints.</p>
+          </a>
+        </div>
+        <div class="col">
+          <a data-project-link="starathon" class="featured-project-card" href="">
+            <img src="./assets/images/Starathon_2025-01-05.png" alt="Thumbnail of the Starathon project">
+            <span class="featured-tag">Team delivery</span>
+            <h3>Starathon</h3>
+            <p>Hackathon project demonstrating collaboration, fast prototyping, frontend delivery, and Scrum practice.</p>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -989,7 +1048,7 @@
               </div>
 
               <!-- starathon card -->
-              <div class="col">
+              <div class="col" id="starathon">
                 <div class="card project-card">
 
                   <!-- card header -->
