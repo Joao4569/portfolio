@@ -498,6 +498,59 @@ a:hover {
   grid-area: text;
 }
 
+.contact-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: center;
+  padding: clamp(24px, 4vw, 40px);
+  border: 1px solid rgba(23, 33, 43, 0.08);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(135deg, rgba(23, 33, 43, 0.96), rgba(23, 33, 43, 0.88)),
+    var(--ink);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-section .body-title,
+.contact-section p {
+  color: var(--white);
+}
+
+.contact-section .body-title {
+  margin-top: 16px;
+}
+
+.contact-section .body-title::after {
+  background: var(--highlight);
+}
+
+.contact-section p {
+  max-width: 760px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.contact-section .btn-outline-primary {
+  border-color: rgba(255, 255, 255, 0.24) !important;
+  color: var(--white) !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.contact-section .btn-outline-primary:hover,
+.contact-section .btn-outline-primary:focus {
+  border-color: var(--highlight) !important;
+  color: var(--highlight) !important;
+  background-color: rgba(242, 184, 75, 0.1) !important;
+}
+
 .body-title {
   color: var(--ink);
   font-size: 2.65rem;
@@ -822,6 +875,14 @@ footer .navbar {
 
   .hero-actions .btn {
     flex: 1 1 180px;
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-actions {
+    justify-content: flex-start;
   }
 }
 
