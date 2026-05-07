@@ -122,6 +122,8 @@ button:focus-visible,
 
 /* Navbar */
 .navbar {
+  position: relative;
+  z-index: 1050;
   max-width: 1180px;
   margin: 0 auto 22px;
   padding: 10px 12px !important;
@@ -179,6 +181,7 @@ button:focus-visible,
 }
 
 .dropdown-menu {
+  z-index: 1060;
   padding: 8px;
   border: 1px solid var(--line) !important;
   border-radius: var(--radius-md) !important;
