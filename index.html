@@ -1,1372 +1,2651 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="João Rodrigues - Full Stack Developer portfolio showcasing Django, Python, JavaScript, C++, Qt/QML, PHP, Laravel, and deployment projects.">
-    <meta name="keywords" content="joao rodrigues, full stack developer, software engineer, django, python, javascript, c++, qt, qml, php, laravel, portfolio">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="João Rodrigues - Full Stack Developer portfolio showcasing Django, Python, JavaScript, C++, Qt/QML, PHP, Laravel, and deployment projects."
+    />
+    <meta
+      name="keywords"
+      content="joao rodrigues, full stack developer, software engineer, django, python, javascript, c++, qt, qml, php, laravel, portfolio"
+    />
     <!-- links to Bootstrap and stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Portfolio - João Rodrigues</title>
-    <link rel="alternate" hreflang="en" href="./index.html">
-    <link rel="alternate" hreflang="de" href="./index-de.html">
-    <meta property="og:title" content="João Rodrigues - Full Stack Developer">
-    <meta property="og:description" content="Portfolio showcasing Django, Python, JavaScript, C++/Qt, QML, PHP, Laravel, and deployment-focused projects.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="./assets/images/wallpaperflare.com_wallpaper.jpg">
+    <link rel="alternate" hreflang="en" href="./index.html" />
+    <link rel="alternate" hreflang="de" href="./index-de.html" />
+    <meta property="og:title" content="João Rodrigues - Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio showcasing Django, Python, JavaScript, C++/Qt, QML, PHP, Laravel, and deployment-focused projects."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="./assets/images/wallpaperflare.com_wallpaper.jpg"
+    />
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon/portfolio_favicon.ico">
-</head>
-<body class="custom-background">
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/images/favicon/portfolio_favicon.ico"
+    />
+  </head>
+  <body class="custom-background">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-md" data-bs-theme="dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#dropdownmenu"
-        aria-controls="dropdownmenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="row fw-semibold collapse navbar-collapse ms-3" id="dropdownmenu">
-        <ul class="navbar-nav aux-text justify-content-center">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle navbar-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
-            </a>
-          
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#tutorial-projects">Tutorial Projects</a></li>
-              <li><a class="dropdown-item" href="#custom-projects">Custom Built Projects</a></li>
-              <li><a class="dropdown-item" href="#hackathon-projects">Hackathon Projects</a></li>
-              <li><a class="dropdown-item" href="#freelance-projects">Freelance Projects</a></li>
-            </ul>
-          </li>
-          
-          <li class="nav-item my-auto">
-            <a class="nav-link navbar-text" href="https://github.com/Joao4569" target="_blank" rel="noopener">
-              GitHub
-            </a>
-          </li>
-          <li class="nav-item my-auto">
-            <a class="nav-link navbar-text" href="https://www.linkedin.com/in/jo%C3%A3o-rodrigues-3669a5b5/" target="_blank" rel="noopener">
-              LinkedIn
-            </a>
-          </li>
-          <li class="nav-item my-auto">
-            <a class="nav-link navbar-text" href="#contact">
-              Contact
-            </a>
-          </li>
-          <li class="nav-item my-auto">
-            <a class="nav-link navbar-text" href="./index-de.html">
-              DE
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler mb-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#dropdownmenu"
+          aria-controls="dropdownmenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="row fw-semibold collapse navbar-collapse ms-3"
+          id="dropdownmenu"
+        >
+          <ul class="navbar-nav aux-text justify-content-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle navbar-text"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
 
-  <main id="main-content">
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#tutorial-projects"
+                    >Tutorial Projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#custom-projects"
+                    >Custom Built Projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#hackathon-projects"
+                    >Hackathon Projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#freelance-projects"
+                    >Freelance Projects</a
+                  >
+                </li>
+              </ul>
+            </li>
 
-  <!-- hero section -->
-  <div class="container-fluid" id="hero">
-    <div class="row py-4">
-
-      <!-- hero titles -->
-      <div class="col-12 col-xxl-6 my-auto hero-text">
-        <h1 class="hero-title">
-          João Rodrigues
-        </h1>
-        <h2 class="hero-job-title mt-3">
-          Full Stack Developer
-        </h2>
-        <p class="subtitle-text mt-4">
-          Full Stack Developer and Software Engineer Intern at Scrona AG, building on a Code Institute diploma and practical experience with Django, Python, JavaScript, C++/Qt, QML, PHP, Laravel, Bootstrap, and PostgreSQL. I bring 15+ years of management experience into software delivery, combining technical growth with communication, ownership, and a strong focus on useful web solutions.
-        </p>
-        <div class="hero-actions mt-4">
-          <a href="#custom-projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
-          <a href="https://github.com/Joao4569" target="_blank" rel="noopener" class="btn btn-outline-primary">
-            <i class="fa-brands fa-github"></i><span class="icon-font-size"> GitHub</span>
-          </a>
-        </div>
-        <div class="hero-skill-list mt-4" aria-label="Core skills">
-          <span>Django</span>
-          <span>Python</span>
-          <span>JavaScript</span>
-          <span>C++/Qt</span>
-          <span>QML</span>
-          <span>PHP/Laravel</span>
-        </div>
-      </div>
-
-      <!-- hero image -->
-      <div class="col-12 col-xxl-6 my-3">
-        <img src="./assets/images/wallpaperflare.com_wallpaper.jpg"
-        alt="Digital art of computer screens and a keyboard as a hero image for style purposes" class="img-fluid justif">
-      </div>
-    </div>
-  </div>
-
-  <!-- profile overview -->
-  <div class="container-fluid" id="updates-and-plans">
-
-    <!-- profile -->
-    <div class="row mt-5 border-info-section portfolio-intro">
-      <div class="col-12 col-lg-7">
-        <h2 class="body-title">What I Bring</h2>
-        <p class="mt-3 px-4">
-          I build full-stack web applications with Django, Python, JavaScript, Bootstrap, PostgreSQL, and modern deployment workflows. My current Scrona AG experience is expanding that stack into C++/Qt, QML, PHP, and Laravel, while my strongest portfolio projects show backend engineering, authentication, payments, cloud storage, Docker, and production-minded problem solving.
-        </p>
-        <p class="mt-3 px-4">
-          Before moving into software development, I spent more than 15 years in management roles. That background shapes how I work: I care about clear communication, dependable delivery, user needs, and making technical decisions that serve real business goals.
-        </p>
-      </div>
-      <div class="col-12 col-lg-5">
-        <div class="profile-snapshot">
-          <span class="snapshot-label">Portfolio Focus</span>
-          <ul>
-            <li>Full-stack Django applications</li>
-            <li>Current C++/Qt, QML, PHP, and Laravel experience</li>
-            <li>Modernized legacy project deployments</li>
-            <li>Client and team-based delivery experience</li>
-            <li>Practical UX improvements with Bootstrap</li>
+            <li class="nav-item my-auto">
+              <a
+                class="nav-link navbar-text"
+                href="https://github.com/Joao4569"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub
+              </a>
+            </li>
+            <li class="nav-item my-auto">
+              <a
+                class="nav-link navbar-text"
+                href="https://www.linkedin.com/in/jo%C3%A3o-rodrigues-3669a5b5/"
+                target="_blank"
+                rel="noopener"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li class="nav-item my-auto">
+              <a class="nav-link navbar-text" href="#contact"> Contact </a>
+            </li>
+            <li class="nav-item my-auto">
+              <a class="nav-link navbar-text" href="./index-de.html"> DE </a>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <!-- strengths -->
-    <div class="row mt-5 g-4 strength-grid">
-      <div class="col-12 col-md-6 col-xl-3">
-        <div class="strength-card">
-          <span>01</span>
-          <h3>Backend</h3>
-          <p>Django, Python, PostgreSQL, PHP, Laravel, data models, authentication, payments, and server-side workflows.</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-xl-3">
-        <div class="strength-card">
-          <span>02</span>
-          <h3>Frontend</h3>
-          <p>Responsive HTML, CSS, JavaScript, Bootstrap, QML, accessibility-minded layouts, and UI polish.</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-xl-3">
-        <div class="strength-card">
-          <span>03</span>
-          <h3>Delivery</h3>
-          <p>Docker, Render, Heroku, AWS S3, GitHub workflows, environment configuration, and deployments.</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-xl-3">
-        <div class="strength-card">
-          <span>04</span>
-          <h3>Leadership</h3>
-          <p>Software engineering internship experience, management background, stakeholder communication, planning, and Scrum practice.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- featured projects -->
-    <div class="featured-projects mt-5">
-      <div class="section-heading">
-        <h2 class="body-title">Featured Projects</h2>
-        <p class="subtitle-text">
-          A focused selection of projects that best represent my current full-stack, deployment, client, and collaboration skills.
-        </p>
-      </div>
-      <div class="row row-cols-1 row-cols-lg-2 g-4 mt-2">
-        <div class="col">
-          <a data-project-link="ocean-basket" class="featured-project-card" href="#ocean-basket" aria-label="View Ocean Basket project details">
-            <img src="./assets/images/ocean_basket.png" alt="Thumbnail of the Ocean Basket project">
-            <span class="featured-tag">Full-stack ecommerce</span>
-            <h3>Ocean Basket</h3>
-            <p>Django 5.2, PostgreSQL, Stripe, Docker, Render, AWS S3, testing, and production deployment.</p>
-            <div class="tech-badge-list" aria-hidden="true">
-              <span>Django</span>
-              <span>PostgreSQL</span>
-              <span>Stripe</span>
-              <span>Docker</span>
-              <span>AWS S3</span>
+    <main id="main-content">
+      <!-- hero section -->
+      <div class="container-fluid" id="hero">
+        <div class="row py-4">
+          <!-- hero titles -->
+          <div class="col-12 col-xxl-6 my-auto hero-text">
+            <h1 class="hero-title">João Rodrigues</h1>
+            <h2 class="hero-job-title mt-3">Full Stack Developer</h2>
+            <p class="subtitle-text mt-4">
+              Full Stack Developer and Software Engineer Intern at Scrona AG,
+              building on a Code Institute diploma and practical experience with
+              Django, Python, JavaScript, C++/Qt, QML, PHP, Laravel, Bootstrap,
+              and PostgreSQL. I bring 15+ years of management experience into
+              software delivery, combining technical growth with communication,
+              ownership, and a strong focus on useful web solutions.
+            </p>
+            <div class="hero-actions mt-4">
+              <a href="#custom-projects" class="btn btn-primary"
+                >View Projects</a
+              >
+              <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+              <a
+                href="https://github.com/Joao4569"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-outline-primary"
+              >
+                <i class="fa-brands fa-github"></i
+                ><span class="icon-font-size"> GitHub</span>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="col">
-          <a data-project-link="farm-fresh" class="featured-project-card" href="#farm-fresh" aria-label="View Farm Fresh project details">
-            <img src="./assets/images/farm_fresh.png" alt="Thumbnail of the Farm Fresh project">
-            <span class="featured-tag">Backend modernization</span>
-            <h3>Farm Fresh</h3>
-            <p>Refactored ecommerce application with modern Django, Python, Docker, cloud media, and deployment workflows.</p>
-            <div class="tech-badge-list" aria-hidden="true">
+            <div class="hero-skill-list mt-4" aria-label="Core skills">
               <span>Django</span>
               <span>Python</span>
-              <span>Docker</span>
-              <span>Render</span>
-              <span>AWS S3</span>
-            </div>
-          </a>
-        </div>
-        <div class="col">
-          <a data-project-link="lern-care" class="featured-project-card" href="#lern-care" aria-label="View Lerncare project details">
-            <img src="./assets/images/lerncare_2025-01-05.png" alt="Thumbnail of the Lerncare project">
-            <span class="featured-tag">Client application</span>
-            <h3>Lerncare</h3>
-            <p>A client-focused Django application shaped around specific professional needs and delivery constraints.</p>
-            <div class="tech-badge-list" aria-hidden="true">
-              <span>Django</span>
-              <span>Python</span>
-              <span>PostgreSQL</span>
-              <span>Bootstrap</span>
-              <span>Client Work</span>
-            </div>
-          </a>
-        </div>
-        <div class="col">
-          <a data-project-link="starathon" class="featured-project-card" href="#starathon" aria-label="View Starathon project details">
-            <img src="./assets/images/Starathon_2025-01-05.png" alt="Thumbnail of the Starathon project">
-            <span class="featured-tag">Team delivery</span>
-            <h3>Starathon</h3>
-            <p>Hackathon project demonstrating collaboration, fast prototyping, frontend delivery, and Scrum practice.</p>
-            <div class="tech-badge-list" aria-hidden="true">
-              <span>HTML</span>
-              <span>CSS</span>
               <span>JavaScript</span>
-              <span>GitHub Pages</span>
-              <span>Scrum</span>
+              <span>C++/Qt</span>
+              <span>QML</span>
+              <span>PHP/Laravel</span>
             </div>
+          </div>
+
+          <!-- hero image -->
+          <div class="col-12 col-xxl-6 my-3">
+            <img
+              src="./assets/images/wallpaperflare.com_wallpaper.jpg"
+              alt="Digital art of computer screens and a keyboard as a hero image for style purposes"
+              class="img-fluid justif"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- profile overview -->
+      <div class="container-fluid" id="updates-and-plans">
+        <!-- profile -->
+        <div class="row mt-5 border-info-section portfolio-intro">
+          <div class="col-12 col-lg-7">
+            <h2 class="body-title">What I Bring</h2>
+            <p class="mt-3 px-4">
+              I build full-stack web applications with Django, Python,
+              JavaScript, Bootstrap, PostgreSQL, and modern deployment
+              workflows. My current Scrona AG experience is expanding that stack
+              into C++/Qt, QML, PHP, and Laravel, while my strongest portfolio
+              projects show backend engineering, authentication, payments, cloud
+              storage, Docker, and production-minded problem solving.
+            </p>
+            <p class="mt-3 px-4">
+              Before moving into software development, I spent more than 15
+              years in management roles. That background shapes how I work: I
+              care about clear communication, dependable delivery, user needs,
+              and making technical decisions that serve real business goals.
+            </p>
+          </div>
+          <div class="col-12 col-lg-5">
+            <div class="profile-snapshot">
+              <span class="snapshot-label">Portfolio Focus</span>
+              <ul>
+                <li>Full-stack Django applications</li>
+                <li>Current C++/Qt, QML, PHP, and Laravel experience</li>
+                <li>Modernized legacy project deployments</li>
+                <li>Client and team-based delivery experience</li>
+                <li>Practical UX improvements with Bootstrap</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- strengths -->
+        <div class="row mt-5 g-4 strength-grid">
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="strength-card">
+              <span>01</span>
+              <h3>Backend</h3>
+              <p>
+                Django, Python, PostgreSQL, PHP, Laravel, data models,
+                authentication, payments, and server-side workflows.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="strength-card">
+              <span>02</span>
+              <h3>Frontend</h3>
+              <p>
+                Responsive HTML, CSS, JavaScript, Bootstrap, QML,
+                accessibility-minded layouts, and UI polish.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="strength-card">
+              <span>03</span>
+              <h3>Delivery</h3>
+              <p>
+                Docker, Render, Heroku, AWS S3, GitHub workflows, environment
+                configuration, and deployments.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="strength-card">
+              <span>04</span>
+              <h3>Leadership</h3>
+              <p>
+                Software engineering internship experience, management
+                background, stakeholder communication, planning, and Scrum
+                practice.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- featured projects -->
+        <div class="featured-projects mt-5">
+          <div class="section-heading">
+            <h2 class="body-title">Featured Projects</h2>
+            <p class="subtitle-text">
+              A focused selection of projects that best represent my current
+              full-stack, deployment, client, and collaboration skills.
+            </p>
+          </div>
+          <div class="row row-cols-1 row-cols-lg-2 g-4 mt-2">
+            <div class="col">
+              <a
+                data-project-link="ocean-basket"
+                class="featured-project-card"
+                href="#ocean-basket"
+                aria-label="View Ocean Basket project details"
+              >
+                <img
+                  src="./assets/images/Portfolio_Ocean_Basket.png"
+                  alt="Thumbnail of the Ocean Basket project"
+                />
+                <span class="featured-tag">Full-stack ecommerce</span>
+                <h3>Ocean Basket</h3>
+                <p>
+                  Django 5.2, PostgreSQL, Stripe, Docker, Render, AWS S3,
+                  testing, and production deployment.
+                </p>
+                <div class="tech-badge-list" aria-hidden="true">
+                  <span>Django</span>
+                  <span>PostgreSQL</span>
+                  <span>Stripe</span>
+                  <span>Docker</span>
+                  <span>AWS S3</span>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                data-project-link="farm-fresh"
+                class="featured-project-card"
+                href="#farm-fresh"
+                aria-label="View Farm Fresh project details"
+              >
+                <img
+                  src="./assets/images/Portfolio_Farm_fresh.png"
+                  alt="Thumbnail of the Farm Fresh project"
+                />
+                <span class="featured-tag">Backend modernization</span>
+                <h3>Farm Fresh</h3>
+                <p>
+                  Refactored ecommerce application with modern Django, Python,
+                  Docker, cloud media, and deployment workflows.
+                </p>
+                <div class="tech-badge-list" aria-hidden="true">
+                  <span>Django</span>
+                  <span>Python</span>
+                  <span>Docker</span>
+                  <span>Render</span>
+                  <span>AWS S3</span>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                data-project-link="lern-care"
+                class="featured-project-card"
+                href="#lern-care"
+                aria-label="View Lerncare project details"
+              >
+                <img
+                  src="./assets/images/lerncare_2025-01-05.png"
+                  alt="Thumbnail of the Lerncare project"
+                />
+                <span class="featured-tag">Client application</span>
+                <h3>Lerncare</h3>
+                <p>
+                  A client-focused Django application shaped around specific
+                  professional needs and delivery constraints.
+                </p>
+                <div class="tech-badge-list" aria-hidden="true">
+                  <span>Django</span>
+                  <span>Python</span>
+                  <span>PostgreSQL</span>
+                  <span>Bootstrap</span>
+                  <span>Client Work</span>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                data-project-link="starathon"
+                class="featured-project-card"
+                href="#starathon"
+                aria-label="View Starathon project details"
+              >
+                <img
+                  src="./assets/images/Starathon_2025-01-05.png"
+                  alt="Thumbnail of the Starathon project"
+                />
+                <span class="featured-tag">Team delivery</span>
+                <h3>Starathon</h3>
+                <p>
+                  Hackathon project demonstrating collaboration, fast
+                  prototyping, frontend delivery, and Scrum practice.
+                </p>
+                <div class="tech-badge-list" aria-hidden="true">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>GitHub Pages</span>
+                  <span>Scrum</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- projects accordion -->
+      <div class="accordion" id="accordionExample">
+        <!-- tutorial projects section -->
+        <div class="accordion-item projects-margin">
+          <!-- accordion header -->
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="false"
+            aria-controls="collapseOne"
+          >
+            <!-- tutorial projects title -->
+            <div class="container" id="tutorial-projects">
+              <!-- title -->
+              <div class="row">
+                <h3 class="body-title">Tutorial Projects</h3>
+              </div>
+
+              <!-- title intro -->
+              <div class="row mt-2">
+                <p class="subtitle-text">
+                  These foundational projects were built during my initial web
+                  development training, demonstrating my grasp of core
+                  technologies and concepts.
+                </p>
+              </div>
+            </div>
+          </button>
+
+          <!-- accordion body -->
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <!-- tutorial projects cards section -->
+              <div class="container">
+                <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
+                  <!-- love running card -->
+                  <div class="col" id="love-running">
+                    <div class="card project-card">
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/love_running.png"
+                        class="card-img-top"
+                        alt="Thumbnail of Love Running project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">Love Running</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          My first complete static website, built for a running
+                          club using core frontend technologies. This project
+                          solidified my understanding of HTML structure, CSS
+                          styling, and responsive design principles.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub Pages<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+                        <a
+                          href="https://joao4569.github.io/love_running/"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/love_running"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- love maths card -->
+                  <div class="col">
+                    <div class="card project-card">
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/love_maths.png"
+                        class="card-img-top"
+                        alt="Thumbnail of Love Maths project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">Love Maths</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          An interactive frontend application providing a simple
+                          math game. This project was my introduction to
+                          JavaScript, focusing on DOM manipulation, event
+                          handling, and basic game logic.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub Pages<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+                        <a
+                          href="https://joao4569.github.io/love-maths/"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/love-maths"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- online resume card -->
+                  <div class="col">
+                    <!-- id only for link in card to site to navigate to card, for the tooltips-->
+                    <div class="card project-card">
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/bootstrap_resume.png"
+                        class="card-img-top"
+                        alt="Thumbnail of the Online Resume project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">Online Resume</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          My first project utilizing the Bootstrap framework.
+                          This online resume demonstrates my ability to
+                          implement responsive design and leverage a popular CSS
+                          framework for efficient styling and layout.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Bootstrap&nbsp;<i
+                              class="fa-brands fa-bootstrap bootstrap-logo-color"
+                            ></i>
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub Pages<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+                        <a
+                          href="https://joao4569.github.io/bootstrap-resume/"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/bootstrap-resume"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- task manager card -->
+                  <div class="col" id="task-manager">
+                    <!-- id only for link in card to site to navigate to card, for the tooltips-->
+                    <div class="card project-card">
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/task_manager.png"
+                        class="card-img-top"
+                        alt="Thumbnail of the Task Manager project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">Task Manager</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          My initial foray into backend development, building a
+                          simple Task Manager application. This project
+                          introduced me to using Flask for web application
+                          development and SQLAlchemy for database interactions,
+                          providing foundational experience with server-side
+                          logic and data persistence.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Python<img
+                              src="assets/images/python-logo-only.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Bootstrap&nbsp;<i
+                              class="fa-brands fa-bootstrap bootstrap-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            Materialize<img
+                              src="assets/images/materializecss-svgrepo-com.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Flask<img
+                              src="assets/images/Flask.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            SQLAlchemy<img
+                              src="assets/images/SQLAlchemy.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="sqla-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            Heroku<img
+                              src="assets/images/heroku-icon-svgrepo-com.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="heroku-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+                        <a
+                          href="#task-manager"
+                          data-bs-toggle="tooltip"
+                          data-bs-title="Site under construction: Moving Database to a new host!"
+                          class="btn btn-primary mt-1"
+                          data-bs-custom-class="custom-tooltip"
+                          ><!-- https://flask-sqlalchemy-task-managerj.herokuapp.com/ -  target="_blank" rel="noopener" -->
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/flask-sqlalchemy-task-manager"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- custom projects section -->
+        <div class="accordion-item projects-margin">
+          <!-- accordion header -->
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            <!-- Custom projects title -->
+            <div class="container" id="custom-projects">
+              <!-- title -->
+              <div class="row">
+                <h3 class="body-title">Custom Built Projects</h3>
+              </div>
+
+              <!-- title intro -->
+              <div class="row mt-2">
+                <p class="subtitle-text">
+                  These projects represent my ability to build full applications
+                  from conception to deployment, applying the skills and
+                  technologies I've acquired.
+                </p>
+              </div>
+            </div>
+          </button>
+
+          <!-- accordion body -->
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <!-- Custom projects cards section -->
+              <div class="container">
+                <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
+                  <!-- becentered card -->
+                  <div class="col" id="becentered">
+                    <div class="card project-card">
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/be_centered.png"
+                        class="card-img-top"
+                        alt="Thumbnail of BeCentered project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">BeCentered</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          A static e-commerce site prototype for a yoga and
+                          meditation instructor, built as my first assessed
+                          project. This project allowed me to apply foundational
+                          HTML, CSS, and responsive design principles to create
+                          a professional online presence.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub Pages<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+
+                        <a
+                          href="https://joao4569.github.io/be-centered/"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/be-centered"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- random trivia card -->
+                  <div class="col">
+                    <div class="card project-card">
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/random_trivia.png"
+                        class="card-img-top"
+                        alt="Thumbnail of the Random Trivia project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">Random Trivia</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          An engaging frontend trivia game application. This
+                          project deepened my JavaScript skills, focusing on
+                          dynamic content generation, API integration for
+                          fetching questions, and managing game state and user
+                          interaction.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub Pages<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+
+                        <a
+                          href="https://joao4569.github.io/random-trivia/"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/random-trivia"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- survey data capture card -->
+                  <div class="col">
+                    <div class="card project-card">
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/survey_data_capture.png"
+                        class="card-img-top"
+                        alt="Thumbnail of the Survey Data Capture project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">
+                          Survey Data Capture
+                        </h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          A Python terminal application designed for capturing
+                          and summarizing survey data. Hosted on Heroku, this
+                          project demonstrates my ability to build command-line
+                          applications, handle user input, and perform data
+                          processing in Python.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="mx-2">
+                            Python<img
+                              src="assets/images/python-logo-only.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                            with a custom terminal window
+                          </li>
+                          <li class="mx-2">
+                            Heroku<img
+                              src="assets/images/heroku-icon-svgrepo-com.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="heroku-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+
+                        <a
+                          href="https://survey-data-capture-extract.herokuapp.com/"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/survey-data-capture-and-analyse"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- joão's recipes card -->
+                  <div class="col">
+                    <div class="card project-card">
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/joaos-recipes.png"
+                        class="card-img-top"
+                        alt="Thumbnail of the João's Recipes project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">João's Recipes</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          A static recipe website developed as part of a
+                          bootcamp application process. This project showcases
+                          my ability to quickly build a multi-page static site
+                          with functional elements like a contact form (using
+                          EmailJS) and demonstrates deployment via Netlify with
+                          GitHub integration.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Bootstrap&nbsp;<i
+                              class="fa-brands fa-bootstrap bootstrap-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            EmailJS<img
+                              src="assets/images/email-js.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Netlify<img
+                              src="assets/images/netlify-svgrepo-com.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="heroku-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+
+                        <a
+                          href="https://joao-rodrigues-pc-recipe-website.netlify.app/"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/pc-recipe-website"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ocean basket card -->
+                  <div class="col" id="ocean-basket">
+                    <!-- id only for link in card to site to navigate to card-->
+                    <div class="card project-card">
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/Portfolio_Ocean_Basket.png"
+                        class="card-img-top"
+                        alt="Thumbnail of the Ocean Basket project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">Ocean Basket</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          A full-stack Django restaurant booking platform
+                          rebuilt from a CRUD-focused reservation app into a
+                          polished, portfolio-ready restaurant experience.<br /><br />
+
+                          This
+                          <span class="fw-bolder update-text">v2.0</span>
+                          upgrade modernizes the project with Django 5.2, Python
+                          3.12.10, Docker containerization, Render deployment,
+                          and a test-driven workflow. The application now
+                          includes a responsive public landing page,
+                          database-backed menu management, role-aware customer
+                          and staff dashboards, authenticated reservation
+                          workflows, cancellation confirmation, booking capacity
+                          validation, custom error pages, and
+                          accessibility-focused UI improvements.<br /><br />
+
+                          The project demonstrates full-stack development, UX
+                          planning, Django models/forms/views, authentication
+                          and access control, admin-managed content, responsive
+                          frontend design, and a strong testing culture with 53
+                          passing tests and high coverage.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Python<img
+                              src="assets/images/python-logo-only.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            PostgreSQL<img
+                              src="assets/images/Postgresql_elephant.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="postgres-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Django<img
+                              src="assets/images/django.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Docker&nbsp<i
+                              class="fa-brands fa-docker docker-logo-color"
+                            ></i>
+                          </li>
+                          <li class="mx-2">
+                            Render.com&nbsp;<i
+                              class="fa-solid fa-cloud db-logo-color"
+                            ></i>
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+
+                        <a
+                          href="https://ocean-basket-v2-0-app.onrender.com/"
+                          target="_blank"
+                          rel="noopener"
+                          data-bs-toggle="tooltip"
+                          data-bs-title="May take up to 50 seconds on initial launch"
+                          class="btn btn-primary mt-1"
+                          data-bs-custom-class="custom-tooltip"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/ocean-basket-restaurant"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo v1.0</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/ocean_basket_2.0"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo v2.0</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- farm fresh card -->
+                  <div class="col" id="farm-fresh">
+                    <!-- id only for link in card to site to navigate to card, for the tooltips-->
+                    <div class="card project-card">
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/Portfolio_Farm_fresh.png"
+                        class="card-img-top"
+                        alt="Thumbnail of the Farm Fresh project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">Farm Fresh</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          A full-stack e-commerce application for an online
+                          fresh produce store, built to demonstrate practical
+                          backend engineering, payment integration, and modern
+                          cloud deployment skills.<br /><br />
+
+                          Developed with Django 5.2, Python 3.12.10, and
+                          PostgreSQL, the application includes secure
+                          authentication with Django Allauth, a session-based
+                          shopping cart, Stripe checkout with webhook handling,
+                          and structured relational data models. Version 2.0
+                          also introduced Dockerised development and deployment
+                          workflows, GitHub Container Registry image delivery,
+                          Render hosting, and AWS S3 for media and static asset
+                          management. The project highlights experience with
+                          building production-ready web applications,
+                          troubleshooting deployment environments, and
+                          maintaining a clear separation between development and
+                          production configuration.<br /><br />
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Python<img
+                              src="assets/images/python-logo-only.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            PostgreSQL<img
+                              src="assets/images/Postgresql_elephant.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="postgres-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Django<img
+                              src="assets/images/django.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Bootstrap&nbsp;<i
+                              class="fa-brands fa-bootstrap bootstrap-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            Stripe<img
+                              src="assets/images/stripe-svgrepo-com.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            AWS S3<img
+                              src="assets/images/Amazon-S3-Logo.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            MailChimp<img
+                              src="assets/images/mailchimp-svgrepo-com.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Docker&nbsp<i
+                              class="fa-brands fa-docker docker-logo-color"
+                            ></i>
+                          </li>
+                          <li class="mx-2">
+                            Render.com&nbsp;<i
+                              class="fa-solid fa-cloud db-logo-color"
+                            ></i>
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+
+                        <a
+                          href="https://farm-fresh-2-0.onrender.com/"
+                          target="_blank"
+                          rel="noopener"
+                          data-bs-toggle="tooltip"
+                          data-bs-title="May take up to 50 seconds on initial launch"
+                          class="btn btn-primary mt-1"
+                          data-bs-custom-class="custom-tooltip"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/farm_fresh"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo v1.0</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/farm_fresh_2.0"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo v2.0</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- hackathon projects section -->
+        <div class="accordion-item projects-margin">
+          <!-- accordion header -->
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            <!-- hackathons title -->
+            <div class="container" id="hackathon-projects">
+              <!-- title -->
+              <div class="row">
+                <h3 class="body-title">Hackathon Projects</h3>
+              </div>
+
+              <!-- title intro -->
+              <div class="row mt-2">
+                <p class="subtitle-text">
+                  Collaborative projects developed during hackathons,
+                  highlighting teamwork, rapid prototyping, and my experience
+                  leading teams as Scrum Master.
+                </p>
+              </div>
+            </div>
+          </button>
+
+          <!-- accordion body -->
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <!-- hackathon cards section -->
+              <div class="container">
+                <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
+                  <!-- sith-ly the best card -->
+                  <div class="col" id="sith-ly-the-best">
+                    <div class="card project-card">
+                      <!-- card header -->
+                      <div class="card-header mt-3 mb-3 text-center">
+                        <img
+                          src="./assets/images/sith-ly-the-best-badge-small.png"
+                          alt="Code Institute participation badge"
+                        />
+                      </div>
+
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/sith-ly-the-best.png"
+                        class="card-img-top"
+                        alt="Thumbnail of Sith-ly the Best project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">Sith-ly the Best</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          An interactive Star Wars memory game developed during
+                          a 5-day hackathon with a team of 7. Elected as Scrum
+                          Master, I facilitated team collaboration and guided
+                          the project from conception to a functional prototype,
+                          gaining valuable experience in team development
+                          dynamics.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Python<img
+                              src="assets/images/python-logo-only.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Django<img
+                              src="assets/images/django.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            PostgreSQL<img
+                              src="assets/images/Postgresql_elephant.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="postgres-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            Heroku<img
+                              src="assets/images/heroku-icon-svgrepo-com.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="heroku-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+
+                        <a
+                          href="https://sith-ly-the-best.herokuapp.com/"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/sith_ly_the_best"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- rainbow warriors card -->
+                  <div class="col">
+                    <div class="card project-card">
+                      <!-- card header -->
+                      <div class="card-header mt-3 mb-3 text-center">
+                        <img
+                          src="./assets/images/sith-ly-the-best-badge-small.png"
+                          alt="Code Institute participation badge"
+                        />
+                      </div>
+
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/rainbow_warriors.png"
+                        class="card-img-top"
+                        alt="Thumbnail of Rainbow Warriors project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">Rainbow Warriors</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          A web application concept for the LGBTQ+ community to
+                          share resources, developed during a hackathon. As
+                          Scrum Master for this team of 7, I focused on
+                          facilitating collaboration and maintaining momentum
+                          despite team challenges, demonstrating leadership and
+                          adaptability in a dynamic project environment. The
+                          project received an honorable mention from the judges.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Python<img
+                              src="assets/images/python-logo-only.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Django<img
+                              src="assets/images/django.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Tailwind CSS<img
+                              src="assets/images/Tailwind_CSS_Logo.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="twcss-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            PostgreSQL<img
+                              src="assets/images/Postgresql_elephant.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="postgres-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            Heroku<img
+                              src="assets/images/heroku-icon-svgrepo-com.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="heroku-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+
+                        <a
+                          href="https://rainbowwarriors-3624423ecf9b.herokuapp.com/"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/RainbowWarriors"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- lovin summer card -->
+                  <div class="col">
+                    <div class="card project-card">
+                      <!-- card header -->
+                      <div class="card-header mt-3 mb-3 text-center">
+                        <img
+                          src="./assets/images/CI_july_2023_hackathon_2nd_place_2023-07-19_small.png"
+                          alt="Code Institute participation badge"
+                        />
+                      </div>
+
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/lovin-summer.png"
+                        class="card-img-top"
+                        alt="Thumbnail of  project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">Lovin Summer</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          A frontend web application promoting healthy summer
+                          lifestyles in Ireland, built by a team of 7 during a
+                          5-day hackathon. As the volunteer Scrum Master, I
+                          facilitated the team's efforts, resulting in a
+                          mobile-first design and a functional application that
+                          earned 2nd place in the competition. This project
+                          highlights my ability to lead, motivate, and deliver
+                          under pressure.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Bootstrap&nbsp;<i
+                              class="fa-brands fa-bootstrap bootstrap-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            Leaflet<img
+                              src="assets/images/leaflet-svgrepo-com.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="leaflet-logo"
+                            />
+                          </li>
+                          <li class="ms-2 me-2">
+                            REST Countries API&nbsp;<i
+                              class="fa-solid fa-earth-africa db-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2 me-2">
+                            Fáilte Ireland's API<img
+                              src="assets/images/failte-ireland.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="failte-ireland-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            Netlify<img
+                              src="assets/images/netlify-svgrepo-com.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="heroku-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+
+                        <a
+                          href="https://musical-kataifi-25a4e4.netlify.app/"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/lovin_summer"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- hack-man card -->
+                  <div class="col">
+                    <div class="card project-card">
+                      <!-- card header -->
+                      <div class="card-header mt-3 mb-3 text-center">
+                        <img
+                          src="./assets/images/sith-ly-the-best-badge-small.png"
+                          alt="Code Institute participation badge"
+                        />
+                      </div>
+
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/hack-man-maze2.png"
+                        class="card-img-top"
+                        alt="Thumbnail of Hack-Man project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">Hack-Man</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          A frontend-only retro arcade game inspired by Pac-Man,
+                          built collaboratively by a team of 6 during a
+                          hackathon. As the volunteer Scrum Master, I guided the
+                          team, many of whom were new to version control,
+                          through the development process, emphasizing teamwork
+                          and rapid iteration to deliver a playable game within
+                          the 5-day timeframe.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Bootstrap&nbsp;<i
+                              class="fa-brands fa-bootstrap bootstrap-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            Django<img
+                              src="assets/images/django.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Kaboom.js<img
+                              src="assets/images/kaboomjs.png"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub Pages<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+
+                        <a
+                          href="https://joao4569.github.io/Hack-Man/"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/Hack-Man"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- starathon card -->
+                  <div class="col" id="starathon">
+                    <div class="card project-card">
+                      <!-- card header -->
+                      <div class="card-header mt-3 mb-3 text-center">
+                        <img
+                          src="./assets/images/sith-ly-the-best-badge-small.png"
+                          alt="Code Institute participation badge"
+                        />
+                      </div>
+
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/Starathon_2025-01-05.png"
+                        class="card-img-top"
+                        alt="Thumbnail of Starathon project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">Starathon</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          An interactive frontend quiz/trivia game based on the
+                          Star Wars franchise, developed collaboratively by a
+                          team of 5. As the nominated Scrum Master, I
+                          facilitated the team's work, focusing on integrating
+                          features like sound effects and multiple difficulty
+                          levels. This project showcases my ability to manage a
+                          team and deliver a fun, interactive application under
+                          hackathon constraints.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub Pages<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+
+                        <a
+                          href="https://efthymiakakoulidou.github.io/starathon/index.html"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/starathon"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- freelance projects section -->
+        <div class="accordion-item projects-margin">
+          <!-- accordion header -->
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="false"
+            aria-controls="collapseFour"
+          >
+            <!-- freelance title -->
+            <div class="container" id="freelance-projects">
+              <!-- title -->
+              <div class="row">
+                <h3 class="body-title">Freelance Projects</h3>
+              </div>
+
+              <!-- title intro -->
+              <div class="row mt-2">
+                <p class="subtitle-text">
+                  Showcasing freelance work developed for clients, demonstrating
+                  my ability to deliver tailored web solutions.
+                </p>
+              </div>
+            </div>
+          </button>
+
+          <!-- accordion body -->
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <!-- freelance cards section -->
+              <div class="container">
+                <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
+                  <!-- lerncare card -->
+                  <div class="col" id="lern-care">
+                    <div class="card project-card">
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/lerncare_2025-01-05.png"
+                        class="card-img-top"
+                        alt="Thumbnail of the Lerncare project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">Lerncare</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          An application designed to support teachers in
+                          Switzerland by providing resources and tools to manage
+                          the challenges of the profession. This project,
+                          currently on hold as per the client's request,
+                          demonstrates my ability to develop applications
+                          addressing specific user needs and work according to
+                          client requirements.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Python<img
+                              src="assets/images/python-logo-only.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Bootstrap&nbsp;<i
+                              class="fa-brands fa-bootstrap bootstrap-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            Django<img
+                              src="assets/images/django.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            PostgreSQL<img
+                              src="assets/images/Postgresql_elephant.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="postgres-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            Heroku<img
+                              src="assets/images/heroku-icon-svgrepo-com.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="heroku-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+
+                        <a
+                          href="https://lerncare-13184912aa8c.herokuapp.com/dashboard/#"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/lerncare"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- SAVO card -->
+                  <div class="col">
+                    <div class="card project-card">
+                      <!-- card image -->
+                      <img
+                        src="./assets/images/SAVO_2025-01-05.png"
+                        class="card-img-top"
+                        alt="Thumbnail of the SAVO project"
+                      />
+
+                      <div class="card-body">
+                        <!-- card titles -->
+                        <h5 class="card-title mb-2 mt-1">SAVO</h5>
+
+                        <!-- card text -->
+                        <p class="card-text my-3">
+                          A static website developed for the Swiss Association
+                          of Veterinary Ophthalmologists (SAVO). This live site
+                          provides essential information about the association
+                          and contact details, demonstrating my ability to
+                          deliver functional and informative web presences for
+                          clients.
+                        </p>
+                      </div>
+
+                      <div class="card-footer">
+                        <!-- card links -->
+                        <a
+                          class="btn btn-primary mt-1"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Tech Stack
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li class="ms-2">
+                            HTML&nbsp;<i
+                              class="fa-brands fa-html5 html-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            CSS&nbsp;<i
+                              class="fa-brands fa-css3-alt css-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            JavaScript<img
+                              src="assets/images/icons8-javascript.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="stripe-logo"
+                            />
+                          </li>
+                          <li class="ms-2">
+                            Bootstrap&nbsp;<i
+                              class="fa-brands fa-bootstrap bootstrap-logo-color"
+                            ></i>
+                          </li>
+                          <li class="ms-2">
+                            EmailJS<img
+                              src="assets/images/email-js.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="django-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            Infomaniak<img
+                              src="assets/images/infomaniak-svgrepo-com.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="heroku-logo"
+                            />
+                          </li>
+                          <li class="mx-2">
+                            GitHub<img
+                              src="assets/images/icons8-github.svg"
+                              alt=""
+                              aria-hidden="true"
+                              class="aws-s3-logo"
+                            />
+                          </li>
+                        </ul>
+
+                        <a
+                          href="https://www.savo-tieraerzte.ch/"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-solid fa-link"></i
+                          ><span class="icon-font-size"> Site</span>
+                        </a>
+                        <a
+                          href="https://github.com/Joao4569/SAVO"
+                          target="_blank"
+                          rel="noopener"
+                          class="btn btn-primary mt-1"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><span class="icon-font-size"> Repo</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact -->
+      <section class="container-fluid mt-5 contact-section" id="contact">
+        <div class="contact-copy">
+          <span class="snapshot-label">Open To Opportunities</span>
+          <h2 class="body-title">Let&apos;s Talk</h2>
+          <p>
+            I am interested in junior to mid-level full-stack, backend, and
+            software engineering roles in Switzerland, with a preference for
+            teams where I can contribute across web development, backend
+            systems, deployment, and product-focused delivery.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a
+            href="https://www.linkedin.com/in/jo%C3%A3o-rodrigues-3669a5b5/"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+          >
+            <i class="fa-brands fa-linkedin"></i
+            ><span class="icon-font-size"> LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/Joao4569"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-outline-primary"
+          >
+            <i class="fa-brands fa-github"></i
+            ><span class="icon-font-size"> GitHub</span>
           </a>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-  </div>
-
-  <!-- projects accordion -->
-  <div class="accordion" id="accordionExample">
-
-    <!-- tutorial projects section -->
-    <div class="accordion-item projects-margin">
-
-      <!-- accordion header -->
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"           aria-controls="collapseOne">
-        <!-- tutorial projects title -->
-        <div class="container" id="tutorial-projects">
-
-          <!-- title -->
-          <div class="row">
-            <h3 class="body-title">
-              Tutorial Projects
-            </h3>
-          </div>
-
-          <!-- title intro -->
-          <div class="row mt-2">
-            <p class="subtitle-text">
-              These foundational projects were built during my initial web development training, demonstrating my grasp of core technologies and concepts.
-            </p>
-          </div>
-
-        </div>
-      </button>
-
-      <!-- accordion body -->
-      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <!-- tutorial projects cards section -->
-          <div class="container">
-            <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
-
-              <!-- love running card -->
-              <div class="col" id="love-running">
-                <div class="card project-card">
-
-                  <!-- card image -->
-                  <img src="./assets/images/love_running.png" class="card-img-top"
-                    alt="Thumbnail of Love Running project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Love Running
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      My first complete static website, built for a running club using core frontend technologies. This project solidified my understanding of HTML structure, CSS styling, and responsive design principles.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-                    <a href="https://joao4569.github.io/love_running/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/love_running" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- love maths card -->
-              <div class="col">
-                <div class="card project-card">
-
-                  <!-- card image -->
-                  <img src="./assets/images/love_maths.png" class="card-img-top"
-                    alt="Thumbnail of Love Maths project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Love Maths
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      An interactive frontend application providing a simple math game. This project was my introduction to JavaScript, focusing on DOM manipulation, event handling, and basic game logic.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-                    <a href="https://joao4569.github.io/love-maths/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/love-maths" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- online resume card -->
-              <div class="col">  <!-- id only for link in card to site to navigate to card, for the tooltips-->
-                <div class="card project-card">
-
-                  <!-- card image -->
-                  <img src="./assets/images/bootstrap_resume.png" class="card-img-top"
-                    alt="Thumbnail of the Online Resume project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Online Resume
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      My first project utilizing the Bootstrap framework. This online resume demonstrates my ability to implement responsive design and leverage a popular CSS framework for efficient styling and layout.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-                    <a href="https://joao4569.github.io/bootstrap-resume/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/bootstrap-resume" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- task manager card -->
-              <div class="col" id="task-manager">  <!-- id only for link in card to site to navigate to card, for the tooltips-->
-                <div class="card project-card">
-
-                  <!-- card image -->
-                  <img src="./assets/images/task_manager.png" class="card-img-top"
-                    alt="Thumbnail of the Task Manager project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Task Manager
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      My initial foray into backend development, building a simple Task Manager application. This project introduced me to using Flask for web application development and SQLAlchemy for database interactions, providing foundational experience with server-side logic and data persistence.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="ms-2">Python<img src="assets/images/python-logo-only.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
-                      <li class="ms-2">Materialize<img src="assets/images/materializecss-svgrepo-com.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">Flask<img src="assets/images/Flask.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">SQLAlchemy<img src="assets/images/SQLAlchemy.svg" alt="" aria-hidden="true" class="sqla-logo"></li>
-                      <li class="mx-2">Heroku<img src="assets/images/heroku-icon-svgrepo-com.svg" alt="" aria-hidden="true" class="heroku-logo"></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-                    <a href="#task-manager" data-bs-toggle="tooltip"
-                      data-bs-title="Site under construction: Moving Database to a new host!" class="btn btn-primary mt-1" data-bs-custom-class="custom-tooltip"
-                    ><!-- https://flask-sqlalchemy-task-managerj.herokuapp.com/ -  target="_blank" rel="noopener" -->
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/flask-sqlalchemy-task-manager" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
+    <!-- footer -->
+    <footer class="container-fluid mt-5">
+      <!-- social links -->
+      <div class="row">
+        <nav class="navbar navbar-expand blk-background pt-3">
+          <div class="container-fluid justify-content-center">
+            <div class="row">
+              <ul class="navbar-nav">
+                <li class="nav-item my-auto">
+                  <a
+                    class="nav-link"
+                    href="https://github.com/Joao4569"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Visit João Rodrigues on GitHub"
+                  >
+                    <i
+                      class="fa-brands fa-github-alt white-font social-links"
+                    ></i>
+                  </a>
+                </li>
+                <li class="nav-item my-auto">
+                  <a
+                    class="nav-link"
+                    href="https://www.linkedin.com/in/jo%C3%A3o-rodrigues-3669a5b5/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Visit João Rodrigues on LinkedIn"
+                  >
+                    <i
+                      class="fa-brands fa-linkedin white-font social-links"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
+        </nav>
+      </div>
+
+      <!-- copyright -->
+      <div class="row blk-background pb-3">
+        <div class="col d-flex justify-content-center">
+          <p class="white-font fw-semibold copyright-text">
+            <span class="fw-normal">&copy;</span> João Rodrigues - All rights
+            reserved
+          </p>
         </div>
       </div>
-    </div>
-
-    <!-- custom projects section -->
-    <div class="accordion-item projects-margin">
-
-      <!-- accordion header -->
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"           aria-controls="collapseTwo">
-        <!-- Custom projects title -->
-        <div class="container" id="custom-projects">
-
-          <!-- title -->
-          <div class="row">
-            <h3 class="body-title">
-              Custom Built Projects
-            </h3>
-          </div>
-
-          <!-- title intro -->
-          <div class="row mt-2">
-            <p class="subtitle-text">
-              These projects represent my ability to build full applications from conception to deployment, applying the skills and technologies I've acquired.
-            </p>
-          </div>
-
-        </div>
-      </button>
-
-      <!-- accordion body -->
-      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <!-- Custom projects cards section -->
-          <div class="container">
-            <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
-
-              <!-- becentered card -->
-              <div class="col" id="becentered">
-                <div class="card project-card">
-
-                  <!-- card image -->
-                  <img src="./assets/images/be_centered.png" class="card-img-top"
-                    alt="Thumbnail of BeCentered project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      BeCentered
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      A static e-commerce site prototype for a yoga and meditation instructor, built as my first assessed project. This project allowed me to apply foundational HTML, CSS, and responsive design principles to create a professional online presence.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-
-                    <a href="https://joao4569.github.io/be-centered/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/be-centered" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- random trivia card -->
-              <div class="col">
-                <div class="card project-card">
-
-                  <!-- card image -->
-                  <img src="./assets/images/random_trivia.png" class="card-img-top"
-                    alt="Thumbnail of the Random Trivia project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Random Trivia
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      An engaging frontend trivia game application. This project deepened my JavaScript skills, focusing on dynamic content generation, API integration for fetching questions, and managing game state and user interaction.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-
-                    <a href="https://joao4569.github.io/random-trivia/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/random-trivia" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- survey data capture card -->
-              <div class="col">
-                <div class="card project-card">
-
-                  <!-- card image -->
-                  <img src="./assets/images/survey_data_capture.png" class="card-img-top"
-                    alt="Thumbnail of the Survey Data Capture project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Survey Data Capture
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      A Python terminal application designed for capturing and summarizing survey data. Hosted on Heroku, this project demonstrates my ability to build command-line applications, handle user input, and perform data processing in Python.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="mx-2">Python<img src="assets/images/python-logo-only.svg" alt="" aria-hidden="true" class="django-logo"> with a custom terminal window</li>
-                      <li class="mx-2">Heroku<img src="assets/images/heroku-icon-svgrepo-com.svg" alt="" aria-hidden="true" class="heroku-logo"></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-
-                    <a href="https://survey-data-capture-extract.herokuapp.com/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/survey-data-capture-and-analyse" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- joão's recipes card -->
-              <div class="col">
-                <div class="card project-card">
-
-                  <!-- card image -->
-                  <img src="./assets/images/joaos-recipes.png" class="card-img-top"
-                    alt="Thumbnail of the João's Recipes project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      João's Recipes
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      A static recipe website developed as part of a bootcamp application process. This project showcases my ability to quickly build a multi-page static site with functional elements like a contact form (using EmailJS) and demonstrates deployment via Netlify with GitHub integration.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
-                      <li class="ms-2">EmailJS<img src="assets/images/email-js.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">Netlify<img src="assets/images/netlify-svgrepo-com.svg" alt="" aria-hidden="true" class="heroku-logo"></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-
-                    <a href="https://joao-rodrigues-pc-recipe-website.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/pc-recipe-website" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- ocean basket card -->
-              <div class="col" id="ocean-basket">  <!-- id only for link in card to site to navigate to card-->
-                <div class="card project-card">
-
-                  <!-- card image -->
-                  <img src="./assets/images/Screenshot_ob_2.0.png" class="card-img-top"
-                    alt="Thumbnail of the Ocean Basket project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Ocean Basket
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      A full-stack e-commerce application for restaurant online bookings, demonstrating robust CRUD functionality.<br><br>
-                      Recently upgraded to <span class="fw-bolder update-text">v2.0</span>, this project now features the latest Django (5.2) and Python (3.12.10), is containerized with Docker, and utilizes Test-Driven Development (TDD) with a comprehensive suite of unit tests for enhanced reliability and maintainability. Deployed on Render.com, this project showcases my ability to build modern, scalable web applications with a focus on best practices and performance.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="ms-2">Python<img src="assets/images/python-logo-only.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">PostgreSQL<img src="assets/images/Postgresql_elephant.svg" alt="" aria-hidden="true" class="postgres-logo"></li>
-                      <li class="ms-2">Django<img src="assets/images/django.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">Docker&nbsp<i class="fa-brands fa-docker docker-logo-color"></i></li>
-                      <li class="mx-2">Render.com&nbsp;<i class="fa-solid fa-cloud db-logo-color"></i></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-
-                    <a href="https://ocean-basket-v2-0-app.onrender.com/" target="_blank" rel="noopener" data-bs-toggle="tooltip"
-                    data-bs-title="May take up to 50 seconds on initial launch"  class="btn btn-primary mt-1" data-bs-custom-class="custom-tooltip">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/ocean-basket-restaurant" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo v1.0</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/ocean_basket_2.0" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo v2.0</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- farm fresh card -->
-              <div class="col" id="farm-fresh">  <!-- id only for link in card to site to navigate to card, for the tooltips-->
-                <div class="card project-card">
-
-                  <!-- card image -->
-                  <img src="./assets/images/farm_fresh.png" class="card-img-top"
-                    alt="Thumbnail of the Farm Fresh project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Farm Fresh
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      A full-stack e-commerce application for an online fresh produce store, built to demonstrate practical backend engineering, payment integration, and modern cloud deployment skills.<br><br>
-                      
-                      Developed with Django 5.2, Python 3.12.10, and PostgreSQL, the application includes secure authentication with Django Allauth, a session-based shopping cart, Stripe checkout with webhook handling, and structured relational data models. Version 2.0 also introduced Dockerised development and deployment workflows, GitHub Container Registry image delivery, Render hosting, and AWS S3 for media and static asset management. The project highlights experience with building production-ready web applications, troubleshooting deployment environments, and maintaining a clear separation between development and production configuration.<br><br>
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="ms-2">Python<img src="assets/images/python-logo-only.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">PostgreSQL<img src="assets/images/Postgresql_elephant.svg" alt="" aria-hidden="true" class="postgres-logo"></li>
-                      <li class="ms-2">Django<img src="assets/images/django.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
-                      <li class="ms-2">Stripe<img src="assets/images/stripe-svgrepo-com.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="ms-2">AWS S3<img src="assets/images/Amazon-S3-Logo.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                      <li class="ms-2">MailChimp<img src="assets/images/mailchimp-svgrepo-com.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                      <li class="ms-2">Docker&nbsp<i class="fa-brands fa-docker docker-logo-color"></i></li>
-                      <li class="mx-2">Render.com&nbsp;<i class="fa-solid fa-cloud db-logo-color"></i></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-
-                    <a href="https://farm-fresh-2-0.onrender.com/" target="_blank" rel="noopener" data-bs-toggle="tooltip"
-                    data-bs-title="May take up to 50 seconds on initial launch"  class="btn btn-primary mt-1" data-bs-custom-class="custom-tooltip">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/farm_fresh" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo v1.0</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/farm_fresh_2.0" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo v2.0</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- hackathon projects section -->
-    <div class="accordion-item projects-margin">
-
-      <!-- accordion header -->
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"           aria-controls="collapseThree">
-        <!-- hackathons title -->
-        <div class="container" id="hackathon-projects">
-
-          <!-- title -->
-          <div class="row">
-            <h3 class="body-title">
-              Hackathon Projects
-            </h3>
-          </div>
-
-          <!-- title intro -->
-          <div class="row mt-2">
-            <p class="subtitle-text">
-              Collaborative projects developed during hackathons, highlighting teamwork, rapid prototyping, and my experience leading teams as Scrum Master.
-            </p>
-          </div>
-
-        </div>
-      </button>
-
-      <!-- accordion body -->
-      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <!-- hackathon cards section -->
-          <div class="container">
-            <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
-
-              <!-- sith-ly the best card -->
-              <div class="col" id="sith-ly-the-best">
-                <div class="card project-card">
-
-                  <!-- card header -->
-                  <div class="card-header mt-3 mb-3 text-center">
-                    <img src="./assets/images/sith-ly-the-best-badge-small.png" alt="Code Institute participation badge">
-                  </div>
-
-                  <!-- card image -->
-                  <img src="./assets/images/sith-ly-the-best.png" class="card-img-top"
-                    alt="Thumbnail of Sith-ly the Best project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Sith-ly the Best
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      An interactive Star Wars memory game developed during a 5-day hackathon with a team of 7. Elected as Scrum Master, I facilitated team collaboration and guided the project from conception to a functional prototype, gaining valuable experience in team development dynamics.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="ms-2">Python<img src="assets/images/python-logo-only.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">Django<img src="assets/images/django.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">PostgreSQL<img src="assets/images/Postgresql_elephant.svg" alt="" aria-hidden="true" class="postgres-logo"></li>
-                      <li class="mx-2">Heroku<img src="assets/images/heroku-icon-svgrepo-com.svg" alt="" aria-hidden="true" class="heroku-logo"></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-
-                    <a href="https://sith-ly-the-best.herokuapp.com/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/sith_ly_the_best" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- rainbow warriors card -->
-              <div class="col">
-                <div class="card project-card">
-
-                  <!-- card header -->
-                  <div class="card-header mt-3 mb-3 text-center">
-                    <img src="./assets/images/sith-ly-the-best-badge-small.png" alt="Code Institute participation badge">
-                  </div>
-
-                  <!-- card image -->
-                  <img src="./assets/images/rainbow_warriors.png" class="card-img-top"
-                    alt="Thumbnail of Rainbow Warriors project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Rainbow Warriors
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      A web application concept for the LGBTQ+ community to share resources, developed during a hackathon. As Scrum Master for this team of 7, I focused on facilitating collaboration and maintaining momentum despite team challenges, demonstrating leadership and adaptability in a dynamic project environment. The project received an honorable mention from the judges.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="ms-2">Python<img src="assets/images/python-logo-only.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">Django<img src="assets/images/django.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">Tailwind CSS<img src="assets/images/Tailwind_CSS_Logo.svg" alt="" aria-hidden="true" class="twcss-logo"></li>
-                      <li class="ms-2">PostgreSQL<img src="assets/images/Postgresql_elephant.svg" alt="" aria-hidden="true" class="postgres-logo"></li>
-                      <li class="mx-2">Heroku<img src="assets/images/heroku-icon-svgrepo-com.svg" alt="" aria-hidden="true" class="heroku-logo"></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-
-                    <a href="https://rainbowwarriors-3624423ecf9b.herokuapp.com/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/RainbowWarriors" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- lovin summer card -->
-              <div class="col">
-                <div class="card project-card">
-
-                  <!-- card header -->
-                  <div class="card-header mt-3 mb-3 text-center">
-                    <img src="./assets/images/CI_july_2023_hackathon_2nd_place_2023-07-19_small.png" alt="Code Institute participation badge">
-                  </div>
-
-                  <!-- card image -->
-                  <img src="./assets/images/lovin-summer.png" class="card-img-top"
-                    alt="Thumbnail of  project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Lovin Summer
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      A frontend web application promoting healthy summer lifestyles in Ireland, built by a team of 7 during a 5-day hackathon. As the volunteer Scrum Master, I facilitated the team's efforts, resulting in a mobile-first design and a functional application that earned 2nd place in the competition. This project highlights my ability to lead, motivate, and deliver under pressure.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
-                      <li class="ms-2">Leaflet<img src="assets/images/leaflet-svgrepo-com.svg" alt="" aria-hidden="true" class="leaflet-logo"></li>
-                      <li class="ms-2 me-2">REST Countries API&nbsp;<i class="fa-solid fa-earth-africa db-logo-color"></i></li>
-                      <li class="ms-2 me-2">Fáilte Ireland's API<img src="assets/images/failte-ireland.svg" alt="" aria-hidden="true" class="failte-ireland-logo"></li>
-                      <li class="mx-2">Netlify<img src="assets/images/netlify-svgrepo-com.svg" alt="" aria-hidden="true" class="heroku-logo"></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-
-                    <a href="https://musical-kataifi-25a4e4.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/lovin_summer" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- hack-man card -->
-              <div class="col">
-                <div class="card project-card">
-
-                  <!-- card header -->
-                  <div class="card-header mt-3 mb-3 text-center">
-                    <img src="./assets/images/sith-ly-the-best-badge-small.png" alt="Code Institute participation badge">
-                  </div>
-
-                  <!-- card image -->
-                  <img src="./assets/images/hack-man-maze2.png" class="card-img-top"
-                    alt="Thumbnail of Hack-Man project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Hack-Man
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      A frontend-only retro arcade game inspired by Pac-Man, built collaboratively by a team of 6 during a hackathon. As the volunteer Scrum Master, I guided the team, many of whom were new to version control, through the development process, emphasizing teamwork and rapid iteration to deliver a playable game within the 5-day timeframe.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
-                      <li class="ms-2">Django<img src="assets/images/django.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">Kaboom.js<img src="assets/images/kaboomjs.png" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-
-                    <a href="https://joao4569.github.io/Hack-Man/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/Hack-Man" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- starathon card -->
-              <div class="col" id="starathon">
-                <div class="card project-card">
-
-                  <!-- card header -->
-                  <div class="card-header mt-3 mb-3 text-center">
-                    <img src="./assets/images/sith-ly-the-best-badge-small.png" alt="Code Institute participation badge">
-                  </div>
-
-                  <!-- card image -->
-                  <img src="./assets/images/Starathon_2025-01-05.png" class="card-img-top"
-                    alt="Thumbnail of Starathon project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Starathon
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      An interactive frontend quiz/trivia game based on the Star Wars franchise, developed collaboratively by a team of 5. As the nominated Scrum Master, I facilitated the team's work, focusing on integrating features like sound effects and multiple difficulty levels. This project showcases my ability to manage a team and deliver a fun, interactive application under hackathon constraints.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                      <li class="mx-2">GitHub Pages<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-
-                    <a href="https://efthymiakakoulidou.github.io/starathon/index.html" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/starathon" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- freelance projects section -->
-    <div class="accordion-item projects-margin">
-
-      <!-- accordion header -->
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"           aria-controls="collapseFour">
-        <!-- freelance title -->
-        <div class="container" id="freelance-projects">
-
-          <!-- title -->
-          <div class="row">
-            <h3 class="body-title">
-              Freelance Projects
-            </h3>
-          </div>
-
-          <!-- title intro -->
-          <div class="row mt-2">
-            <p class="subtitle-text">
-              Showcasing freelance work developed for clients, demonstrating my ability to deliver tailored web solutions.
-            </p>
-          </div>
-
-        </div>
-      </button>
-
-      <!-- accordion body -->
-      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <!-- freelance cards section -->
-          <div class="container">
-            <div class="row row-cols-1 row-cols-xl-3 g-4 mt-4">
-
-              <!-- lerncare card -->
-              <div class="col" id="lern-care">
-                <div class="card project-card">
-
-                  <!-- card image -->
-                  <img src="./assets/images/lerncare_2025-01-05.png" class="card-img-top"
-                    alt="Thumbnail of the Lerncare project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      Lerncare
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      An application designed to support teachers in Switzerland by providing resources and tools to manage the challenges of the profession. This project, currently on hold as per the client's request, demonstrates my ability to develop applications addressing specific user needs and work according to client requirements.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="ms-2">Python<img src="assets/images/python-logo-only.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
-                      <li class="ms-2">Django<img src="assets/images/django.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="ms-2">PostgreSQL<img src="assets/images/Postgresql_elephant.svg" alt="" aria-hidden="true" class="postgres-logo"></li>
-                      <li class="mx-2">Heroku<img src="assets/images/heroku-icon-svgrepo-com.svg" alt="" aria-hidden="true" class="heroku-logo"></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-
-                    <a href="https://lerncare-13184912aa8c.herokuapp.com/dashboard/#" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/lerncare" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- SAVO card -->
-              <div class="col">
-                <div class="card project-card">
-
-                  <!-- card image -->
-                  <img src="./assets/images/SAVO_2025-01-05.png" class="card-img-top"
-                    alt="Thumbnail of the SAVO project">
-
-                  <div class="card-body">
-
-                    <!-- card titles -->
-                    <h5 class="card-title mb-2 mt-1">
-                      SAVO
-                    </h5>
-
-                    <!-- card text -->
-                    <p class="card-text my-3">
-                      A static website developed for the Swiss Association of Veterinary Ophthalmologists (SAVO). This live site provides essential information about the association and contact details, demonstrating my ability to deliver functional and informative web presences for clients.
-                    </p>
-
-                  </div>
-
-                  <div class="card-footer">
-
-                    <!-- card links -->
-                    <a class="btn btn-primary mt-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Tech Stack
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li class="ms-2">HTML&nbsp;<i class="fa-brands fa-html5 html-logo-color"></i></li>
-                      <li class="ms-2">CSS&nbsp;<i class="fa-brands fa-css3-alt css-logo-color"></i></li>
-                      <li class="ms-2">JavaScript<img src="assets/images/icons8-javascript.svg" alt="" aria-hidden="true" class="stripe-logo"></li>
-                      <li class="ms-2">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap bootstrap-logo-color"></i></li>
-                      <li class="ms-2">EmailJS<img src="assets/images/email-js.svg" alt="" aria-hidden="true" class="django-logo"></li>
-                      <li class="mx-2">Infomaniak<img src="assets/images/infomaniak-svgrepo-com.svg" alt="" aria-hidden="true" class="heroku-logo"></li>
-                      <li class="mx-2">GitHub<img src="assets/images/icons8-github.svg" alt="" aria-hidden="true" class="aws-s3-logo"></li>
-                    </ul>
-
-                    <a href="https://www.savo-tieraerzte.ch/" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-solid fa-link"></i><span class="icon-font-size"> Site</span>
-                    </a>
-                    <a href="https://github.com/Joao4569/SAVO" target="_blank" rel="noopener" class="btn btn-primary mt-1">
-                      <i class="fa-brands fa-github"></i><span class="icon-font-size"> Repo</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- contact -->
-  <section class="container-fluid mt-5 contact-section" id="contact">
-    <div class="contact-copy">
-      <span class="snapshot-label">Open To Opportunities</span>
-      <h2 class="body-title">Let&apos;s Talk</h2>
-      <p>
-        I am interested in junior to mid-level full-stack, backend, and software engineering roles in Switzerland, with a preference for teams where I can contribute across web development, backend systems, deployment, and product-focused delivery.
-      </p>
-    </div>
-    <div class="contact-actions">
-      <a href="https://www.linkedin.com/in/jo%C3%A3o-rodrigues-3669a5b5/" target="_blank" rel="noopener" class="btn btn-primary">
-        <i class="fa-brands fa-linkedin"></i><span class="icon-font-size"> LinkedIn</span>
-      </a>
-      <a href="https://github.com/Joao4569" target="_blank" rel="noopener" class="btn btn-outline-primary">
-        <i class="fa-brands fa-github"></i><span class="icon-font-size"> GitHub</span>
-      </a>
-    </div>
-  </section>
-
-  </main>
-
-  <!-- footer -->
-  <footer class="container-fluid mt-5">
-
-    <!-- social links -->
-    <div class="row">
-      <nav class="navbar navbar-expand blk-background pt-3">
-        <div class="container-fluid justify-content-center">
-          <div class="row">
-            <ul class="navbar-nav">
-              <li class="nav-item my-auto">
-                <a class="nav-link" href="https://github.com/Joao4569" target="_blank" rel="noopener" aria-label="Visit João Rodrigues on GitHub">
-                  <i class="fa-brands fa-github-alt white-font social-links"></i>
-                </a>
-              </li>
-              <li class="nav-item my-auto">
-                <a class="nav-link" href="https://www.linkedin.com/in/jo%C3%A3o-rodrigues-3669a5b5/" target="_blank" rel="noopener" aria-label="Visit João Rodrigues on LinkedIn">
-                  <i class="fa-brands fa-linkedin white-font social-links"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <!-- copyright -->
-    <div class="row blk-background pb-3">
-      <div class="col d-flex justify-content-center">
-        <p class="white-font fw-semibold copyright-text">
-          <span class="fw-normal">&copy;</span> João Rodrigues - All rights reserved
-        </p>
-      </div>
-    </div>
-
-  </footer>
-
-<!-- font awesome script -->
-<script src="https://kit.fontawesome.com/e26a309e14.js" crossorigin="anonymous"></script>
-
-<!-- Bootstrap plugins -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-</script>
-
-<!-- Custom tooltip script -->
-<script src="assets/js/tooltips.js"></script>
-
-<!-- Custom card navigation script -->
-<script src="assets/js/card-navigation-links.js"></script>
-
-<!-- No javascript message -->
-<noscript>Your browser does not support JavaScript!</noscript>
-
-</body>
+    </footer>
+
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/e26a309e14.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap plugins -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom tooltip script -->
+    <script src="assets/js/tooltips.js"></script>
+
+    <!-- Custom card navigation script -->
+    <script src="assets/js/card-navigation-links.js"></script>
+
+    <!-- No javascript message -->
+    <noscript>Your browser does not support JavaScript!</noscript>
+  </body>
 </html>
-
