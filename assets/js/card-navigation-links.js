@@ -14,6 +14,7 @@ document.addEventListener('click', function (event) {
       'ocean-basket': { accordionId: 'collapseTwo', cardId: 'ocean-basket' },
       'farm-fresh': { accordionId: 'collapseTwo', cardId: 'farm-fresh' },
       'lern-care': { accordionId: 'collapseFour', cardId: 'lern-care' },
+      'savo': { accordionId: 'collapseFour', cardId: 'savo' },
       'starathon': { accordionId: 'collapseThree', cardId: 'starathon' },
     };
 
